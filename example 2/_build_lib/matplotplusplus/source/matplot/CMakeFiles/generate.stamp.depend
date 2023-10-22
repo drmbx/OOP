@@ -1,0 +1,15 @@
+# CMake generation dependency list for this directory.
+C:/programming/CMake/share/cmake-3.28/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake
+C:/programming/CMake/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake
+C:/programming/CMake/share/cmake-3.28/Modules/CheckCSourceCompiles.cmake
+C:/programming/CMake/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake
+C:/programming/CMake/share/cmake-3.28/Modules/CheckCXXSourceCompiles.cmake
+C:/programming/CMake/share/cmake-3.28/Modules/CheckCompilerFlag.cmake
+C:/programming/CMake/share/cmake-3.28/Modules/CheckSourceCompiles.cmake
+C:/programming/CMake/share/cmake-3.28/Modules/CheckSymbolExists.cmake
+C:/programming/CMake/share/cmake-3.28/Modules/GenerateExportHeader.cmake
+C:/programming/CMake/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake
+C:/programming/CMake/share/cmake-3.28/Modules/Internal/CheckFlagCommonConfig.cmake
+C:/programming/CMake/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake
+C:/programming/CMake/share/cmake-3.28/Modules/exportheader.cmake.in
+C:/programming/OOP/example 2/lib/matplotplusplus/source/matplot/CMakeLists.txt

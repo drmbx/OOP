@@ -1,0 +1,13 @@
+# CMake generation dependency list for this directory.
+C:/programming/CMake/share/cmake-3.28/Modules/CMakePackageConfigHelpers.cmake
+C:/programming/CMake/share/cmake-3.28/Modules/ExternalProject/shared_internal_commands.cmake
+C:/programming/CMake/share/cmake-3.28/Modules/FetchContent.cmake
+C:/programming/CMake/share/cmake-3.28/Modules/GNUInstallDirs.cmake
+C:/programming/CMake/share/cmake-3.28/Modules/WriteBasicConfigVersionFile.cmake
+C:/programming/OOP/example 2/lib/matplotplusplus/CMakeLists.txt
+C:/programming/OOP/example 2/lib/matplotplusplus/cmake/functions.cmake
+C:/programming/OOP/example 2/lib/matplotplusplus/cmake/functions/ensure_build_type.cmake
+C:/programming/OOP/example 2/lib/matplotplusplus/cmake/functions/link_external_libraries.cmake
+C:/programming/OOP/example 2/lib/matplotplusplus/cmake/functions/project_flags.cmake
+C:/programming/OOP/example 2/lib/matplotplusplus/cmake/functions/sanitizers.cmake
+C:/programming/OOP/example 2/lib/matplotplusplus/cmake/functions/target_options.cmake
