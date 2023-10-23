@@ -1,3 +1,0 @@
-C:/programming/OOP/Lector_1b/cmake-build-debug/CMakeFiles/Lector_1b.dir
-C:/programming/OOP/Lector_1b/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/programming/OOP/Lector_1b/cmake-build-debug/CMakeFiles/rebuild_cache.dir
