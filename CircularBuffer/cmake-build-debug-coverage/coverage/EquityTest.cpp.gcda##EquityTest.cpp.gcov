@@ -1,0 +1,851 @@
+        -:    0:Source:/home/drmbx/CLionProjects/OOP/CircularBuffer/test/EquityTest.cpp
+        -:    0:Graph:/home/drmbx/CLionProjects/OOP/CircularBuffer/cmake-build-debug-coverage/test/CMakeFiles/Tests.dir/EquityTest.cpp.gcno
+        -:    0:Data:/home/drmbx/CLionProjects/OOP/CircularBuffer/cmake-build-debug-coverage/test/CMakeFiles/Tests.dir/EquityTest.cpp.gcda
+        -:    0:Runs:1
+        -:    1:#include "gtest/gtest.h"
+        -:    2:#include "CircularBuffer.h"
+        -:    3:#include "TestUtils.h"
+        -:    4:
+        4:    5:TEST(GetterTest, TrivialEq)
+        -:    6:{
+        1:    7:    CircularBuffer<int> a(5,12);
+       1*:    8:    EXPECT_TRUE(a == a);
+        1:    9:}
+------------------
+_ZN25GetterTest_TrivialEq_TestC2Ev:
+function _ZN25GetterTest_TrivialEq_TestC2Ev called 1 returned 100% blocks executed 100%
+        1:    5:TEST(GetterTest, TrivialEq)
+        1:    5-block  0
+call    0 returned 1
+------------------
+_ZN25GetterTest_TrivialEq_TestD0Ev:
+function _ZN25GetterTest_TrivialEq_TestD0Ev called 1 returned 100% blocks executed 100%
+        1:    5:TEST(GetterTest, TrivialEq)
+        1:    5-block  0
+call    0 returned 1
+call    1 returned 1
+------------------
+_ZN25GetterTest_TrivialEq_TestD2Ev:
+function _ZN25GetterTest_TrivialEq_TestD2Ev called 1 returned 100% blocks executed 100%
+        1:    5:TEST(GetterTest, TrivialEq)
+        1:    5-block  0
+call    0 returned 1
+------------------
+_ZN25GetterTest_TrivialEq_Test8TestBodyEv:
+function _ZN25GetterTest_TrivialEq_Test8TestBodyEv called 1 returned 100% blocks executed 27%
+        1:    5:TEST(GetterTest, TrivialEq)
+        -:    6:{
+        1:    7:    CircularBuffer<int> a(5,12);
+        1:    7-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+    $$$$$:    7-block  1
+       1*:    8:    EXPECT_TRUE(a == a);
+        1:    8-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+branch  3 taken 0 (fallthrough)
+branch  4 taken 1
+    %%%%%:    8-block  1
+call    5 never executed
+branch  6 never executed (fallthrough)
+branch  7 never executed (throw)
+    %%%%%:    8-block  2
+call    8 never executed
+branch  9 never executed (fallthrough)
+branch 10 never executed (throw)
+    %%%%%:    8-block  3
+call   11 never executed
+call   12 never executed
+branch 13 never executed (fallthrough)
+branch 14 never executed (throw)
+    %%%%%:    8-block  4
+call   15 never executed
+branch 16 never executed (fallthrough)
+branch 17 never executed (throw)
+    %%%%%:    8-block  5
+call   18 never executed
+call   19 never executed
+call   20 never executed
+        1:    8-block  6
+call   21 returned 1
+    $$$$$:    8-block  7
+call   22 never executed
+    $$$$$:    8-block  8
+call   23 never executed
+    $$$$$:    8-block  9
+    $$$$$:    8-block 10
+    $$$$$:    8-block 11
+call   24 never executed
+    $$$$$:    8-block 12
+    $$$$$:    8-block 13
+call   25 never executed
+        1:    9:}
+call    0 returned 1
+    $$$$$:    9-block  0
+call    1 never executed
+------------------
+        -:   10:
+        4:   11:TEST(GetterTest, DifSizeEq)
+        -:   12:{
+        1:   13:    CircularBuffer<int> a(5);
+        1:   14:    a.push_back(1);
+        1:   15:    a.push_back(2);
+        1:   16:    CircularBuffer<int> b(5);
+        1:   17:    b.push_back(1);
+        1:   18:    b.push_back(2);
+        1:   19:    b.push_back(3);
+        1:   20:    b.push_back(4);
+       1*:   21:    EXPECT_FALSE(a == b);
+        1:   22:}
+------------------
+_ZN25GetterTest_DifSizeEq_TestC2Ev:
+function _ZN25GetterTest_DifSizeEq_TestC2Ev called 1 returned 100% blocks executed 100%
+        1:   11:TEST(GetterTest, DifSizeEq)
+        1:   11-block  0
+call    0 returned 1
+------------------
+_ZN25GetterTest_DifSizeEq_TestD0Ev:
+function _ZN25GetterTest_DifSizeEq_TestD0Ev called 1 returned 100% blocks executed 100%
+        1:   11:TEST(GetterTest, DifSizeEq)
+        1:   11-block  0
+call    0 returned 1
+call    1 returned 1
+------------------
+_ZN25GetterTest_DifSizeEq_TestD2Ev:
+function _ZN25GetterTest_DifSizeEq_TestD2Ev called 1 returned 100% blocks executed 100%
+        1:   11:TEST(GetterTest, DifSizeEq)
+        1:   11-block  0
+call    0 returned 1
+------------------
+_ZN25GetterTest_DifSizeEq_Test8TestBodyEv:
+function _ZN25GetterTest_DifSizeEq_Test8TestBodyEv called 1 returned 100% blocks executed 35%
+        1:   11:TEST(GetterTest, DifSizeEq)
+        -:   12:{
+        1:   13:    CircularBuffer<int> a(5);
+        1:   13-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   14:    a.push_back(1);
+        1:   14-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+    $$$$$:   14-block  1
+        1:   15:    a.push_back(2);
+        1:   15-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+    $$$$$:   15-block  1
+        1:   16:    CircularBuffer<int> b(5);
+        1:   16-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   17:    b.push_back(1);
+        1:   17-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+    $$$$$:   17-block  1
+        1:   18:    b.push_back(2);
+        1:   18-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+    $$$$$:   18-block  1
+        1:   19:    b.push_back(3);
+        1:   19-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+    $$$$$:   19-block  1
+        1:   20:    b.push_back(4);
+        1:   20-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+    $$$$$:   20-block  1
+       1*:   21:    EXPECT_FALSE(a == b);
+        1:   21-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+branch  3 taken 0 (fallthrough)
+branch  4 taken 1
+    %%%%%:   21-block  1
+call    5 never executed
+branch  6 never executed (fallthrough)
+branch  7 never executed (throw)
+    %%%%%:   21-block  2
+call    8 never executed
+branch  9 never executed (fallthrough)
+branch 10 never executed (throw)
+    %%%%%:   21-block  3
+call   11 never executed
+call   12 never executed
+branch 13 never executed (fallthrough)
+branch 14 never executed (throw)
+    %%%%%:   21-block  4
+call   15 never executed
+branch 16 never executed (fallthrough)
+branch 17 never executed (throw)
+    %%%%%:   21-block  5
+call   18 never executed
+call   19 never executed
+call   20 never executed
+        1:   21-block  6
+call   21 returned 1
+    $$$$$:   21-block  7
+call   22 never executed
+    $$$$$:   21-block  8
+call   23 never executed
+    $$$$$:   21-block  9
+    $$$$$:   21-block 10
+    $$$$$:   21-block 11
+call   24 never executed
+    $$$$$:   21-block 12
+    $$$$$:   21-block 13
+call   25 never executed
+        1:   22:}
+call    0 returned 1
+call    1 returned 1
+    $$$$$:   22-block  0
+call    2 never executed
+    $$$$$:   22-block  1
+call    3 never executed
+------------------
+        -:   23:
+        4:   24:TEST(GetterTest, DifCapacityEq)
+        -:   25:{
+        1:   26:    CircularBuffer<int> a(5,3);
+        1:   27:    CircularBuffer<int> b(7,3);
+       1*:   28:    EXPECT_FALSE(a == b);
+        1:   29:}
+------------------
+_ZN29GetterTest_DifCapacityEq_TestC2Ev:
+function _ZN29GetterTest_DifCapacityEq_TestC2Ev called 1 returned 100% blocks executed 100%
+        1:   24:TEST(GetterTest, DifCapacityEq)
+        1:   24-block  0
+call    0 returned 1
+------------------
+_ZN29GetterTest_DifCapacityEq_TestD0Ev:
+function _ZN29GetterTest_DifCapacityEq_TestD0Ev called 1 returned 100% blocks executed 100%
+        1:   24:TEST(GetterTest, DifCapacityEq)
+        1:   24-block  0
+call    0 returned 1
+call    1 returned 1
+------------------
+_ZN29GetterTest_DifCapacityEq_TestD2Ev:
+function _ZN29GetterTest_DifCapacityEq_TestD2Ev called 1 returned 100% blocks executed 100%
+        1:   24:TEST(GetterTest, DifCapacityEq)
+        1:   24-block  0
+call    0 returned 1
+------------------
+_ZN29GetterTest_DifCapacityEq_Test8TestBodyEv:
+function _ZN29GetterTest_DifCapacityEq_Test8TestBodyEv called 1 returned 100% blocks executed 29%
+        1:   24:TEST(GetterTest, DifCapacityEq)
+        -:   25:{
+        1:   26:    CircularBuffer<int> a(5,3);
+        1:   26-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+    $$$$$:   26-block  1
+        1:   27:    CircularBuffer<int> b(7,3);
+        1:   27-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+    $$$$$:   27-block  1
+       1*:   28:    EXPECT_FALSE(a == b);
+        1:   28-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+branch  3 taken 0 (fallthrough)
+branch  4 taken 1
+    %%%%%:   28-block  1
+call    5 never executed
+branch  6 never executed (fallthrough)
+branch  7 never executed (throw)
+    %%%%%:   28-block  2
+call    8 never executed
+branch  9 never executed (fallthrough)
+branch 10 never executed (throw)
+    %%%%%:   28-block  3
+call   11 never executed
+call   12 never executed
+branch 13 never executed (fallthrough)
+branch 14 never executed (throw)
+    %%%%%:   28-block  4
+call   15 never executed
+branch 16 never executed (fallthrough)
+branch 17 never executed (throw)
+    %%%%%:   28-block  5
+call   18 never executed
+call   19 never executed
+call   20 never executed
+        1:   28-block  6
+call   21 returned 1
+    $$$$$:   28-block  7
+call   22 never executed
+    $$$$$:   28-block  8
+call   23 never executed
+    $$$$$:   28-block  9
+    $$$$$:   28-block 10
+    $$$$$:   28-block 11
+call   24 never executed
+    $$$$$:   28-block 12
+    $$$$$:   28-block 13
+call   25 never executed
+        1:   29:}
+call    0 returned 1
+call    1 returned 1
+    $$$$$:   29-block  0
+call    2 never executed
+    $$$$$:   29-block  1
+call    3 never executed
+------------------
+        -:   30:
+        4:   31:TEST(GetterTest, EqualityFalse)
+        -:   32:{
+        1:   33:    CircularBuffer<int> a(100);
+        1:   34:    CircularBuffer<int> b(100);
+      101:   35:    for (int i = 0; i < 100; i++)
+        -:   36:    {
+      100:   37:        a.push_back(i);
+      100:   38:        b.push_back(i);
+        -:   39:    }
+        1:   40:    b[96] = 502;
+       1*:   41:    EXPECT_FALSE(a == b);
+        1:   42:}
+------------------
+_ZN29GetterTest_EqualityFalse_TestC2Ev:
+function _ZN29GetterTest_EqualityFalse_TestC2Ev called 1 returned 100% blocks executed 100%
+        1:   31:TEST(GetterTest, EqualityFalse)
+        1:   31-block  0
+call    0 returned 1
+------------------
+_ZN29GetterTest_EqualityFalse_TestD0Ev:
+function _ZN29GetterTest_EqualityFalse_TestD0Ev called 1 returned 100% blocks executed 100%
+        1:   31:TEST(GetterTest, EqualityFalse)
+        1:   31-block  0
+call    0 returned 1
+call    1 returned 1
+------------------
+_ZN29GetterTest_EqualityFalse_TestD2Ev:
+function _ZN29GetterTest_EqualityFalse_TestD2Ev called 1 returned 100% blocks executed 100%
+        1:   31:TEST(GetterTest, EqualityFalse)
+        1:   31-block  0
+call    0 returned 1
+------------------
+_ZN29GetterTest_EqualityFalse_Test8TestBodyEv:
+function _ZN29GetterTest_EqualityFalse_Test8TestBodyEv called 1 returned 100% blocks executed 40%
+        1:   31:TEST(GetterTest, EqualityFalse)
+        -:   32:{
+        1:   33:    CircularBuffer<int> a(100);
+        1:   33-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   34:    CircularBuffer<int> b(100);
+        1:   34-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+      101:   35:    for (int i = 0; i < 100; i++)
+        1:   35-block  0
+      100:   35-block  1
+      101:   35-block  2
+branch  0 taken 100
+branch  1 taken 1 (fallthrough)
+        -:   36:    {
+      100:   37:        a.push_back(i);
+      100:   37-block  0
+call    0 returned 100
+branch  1 taken 100 (fallthrough)
+branch  2 taken 0 (throw)
+      100:   38:        b.push_back(i);
+      100:   38-block  0
+call    0 returned 100
+branch  1 taken 100 (fallthrough)
+branch  2 taken 0 (throw)
+        -:   39:    }
+        1:   40:    b[96] = 502;
+        1:   40-block  0
+call    0 returned 1
+       1*:   41:    EXPECT_FALSE(a == b);
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+branch  3 taken 0 (fallthrough)
+branch  4 taken 1
+    %%%%%:   41-block  0
+call    5 never executed
+branch  6 never executed (fallthrough)
+branch  7 never executed (throw)
+    %%%%%:   41-block  1
+call    8 never executed
+branch  9 never executed (fallthrough)
+branch 10 never executed (throw)
+    %%%%%:   41-block  2
+call   11 never executed
+call   12 never executed
+branch 13 never executed (fallthrough)
+branch 14 never executed (throw)
+    %%%%%:   41-block  3
+call   15 never executed
+branch 16 never executed (fallthrough)
+branch 17 never executed (throw)
+    %%%%%:   41-block  4
+call   18 never executed
+call   19 never executed
+call   20 never executed
+        1:   41-block  5
+call   21 returned 1
+    $$$$$:   41-block  6
+call   22 never executed
+    $$$$$:   41-block  7
+call   23 never executed
+    $$$$$:   41-block  8
+    $$$$$:   41-block  9
+    $$$$$:   41-block 10
+call   24 never executed
+    $$$$$:   41-block 11
+    $$$$$:   41-block 12
+call   25 never executed
+        1:   42:}
+call    0 returned 1
+call    1 returned 1
+    $$$$$:   42-block  0
+call    2 never executed
+    $$$$$:   42-block  1
+call    3 never executed
+------------------
+        -:   43:
+        4:   44:TEST(GetterTest, TrivialUneq)
+        -:   45:{
+        1:   46:    CircularBuffer<int> a(5,12);
+       1*:   47:    EXPECT_FALSE(a != a);
+        1:   48:}
+------------------
+_ZN27GetterTest_TrivialUneq_TestC2Ev:
+function _ZN27GetterTest_TrivialUneq_TestC2Ev called 1 returned 100% blocks executed 100%
+        1:   44:TEST(GetterTest, TrivialUneq)
+        1:   44-block  0
+call    0 returned 1
+------------------
+_ZN27GetterTest_TrivialUneq_TestD0Ev:
+function _ZN27GetterTest_TrivialUneq_TestD0Ev called 1 returned 100% blocks executed 100%
+        1:   44:TEST(GetterTest, TrivialUneq)
+        1:   44-block  0
+call    0 returned 1
+call    1 returned 1
+------------------
+_ZN27GetterTest_TrivialUneq_TestD2Ev:
+function _ZN27GetterTest_TrivialUneq_TestD2Ev called 1 returned 100% blocks executed 100%
+        1:   44:TEST(GetterTest, TrivialUneq)
+        1:   44-block  0
+call    0 returned 1
+------------------
+_ZN27GetterTest_TrivialUneq_Test8TestBodyEv:
+function _ZN27GetterTest_TrivialUneq_Test8TestBodyEv called 1 returned 100% blocks executed 27%
+        1:   44:TEST(GetterTest, TrivialUneq)
+        -:   45:{
+        1:   46:    CircularBuffer<int> a(5,12);
+        1:   46-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+    $$$$$:   46-block  1
+       1*:   47:    EXPECT_FALSE(a != a);
+        1:   47-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+branch  3 taken 0 (fallthrough)
+branch  4 taken 1
+    %%%%%:   47-block  1
+call    5 never executed
+branch  6 never executed (fallthrough)
+branch  7 never executed (throw)
+    %%%%%:   47-block  2
+call    8 never executed
+branch  9 never executed (fallthrough)
+branch 10 never executed (throw)
+    %%%%%:   47-block  3
+call   11 never executed
+call   12 never executed
+branch 13 never executed (fallthrough)
+branch 14 never executed (throw)
+    %%%%%:   47-block  4
+call   15 never executed
+branch 16 never executed (fallthrough)
+branch 17 never executed (throw)
+    %%%%%:   47-block  5
+call   18 never executed
+call   19 never executed
+call   20 never executed
+        1:   47-block  6
+call   21 returned 1
+    $$$$$:   47-block  7
+call   22 never executed
+    $$$$$:   47-block  8
+call   23 never executed
+    $$$$$:   47-block  9
+    $$$$$:   47-block 10
+    $$$$$:   47-block 11
+call   24 never executed
+    $$$$$:   47-block 12
+    $$$$$:   47-block 13
+call   25 never executed
+        1:   48:}
+call    0 returned 1
+    $$$$$:   48-block  0
+call    1 never executed
+------------------
+        -:   49:
+        4:   50:TEST(GetterTest, DifSizeUneq)
+        -:   51:{
+        1:   52:    CircularBuffer<int> a(5);
+        1:   53:    a.push_back(1);
+        1:   54:    a.push_back(2);
+        1:   55:    CircularBuffer<int> b(5);
+        1:   56:    b.push_back(1);
+        1:   57:    b.push_back(2);
+        1:   58:    b.push_back(3);
+        1:   59:    b.push_back(4);
+       1*:   60:    EXPECT_TRUE(a != b);
+        1:   61:}
+------------------
+_ZN27GetterTest_DifSizeUneq_TestC2Ev:
+function _ZN27GetterTest_DifSizeUneq_TestC2Ev called 1 returned 100% blocks executed 100%
+        1:   50:TEST(GetterTest, DifSizeUneq)
+        1:   50-block  0
+call    0 returned 1
+------------------
+_ZN27GetterTest_DifSizeUneq_TestD0Ev:
+function _ZN27GetterTest_DifSizeUneq_TestD0Ev called 1 returned 100% blocks executed 100%
+        1:   50:TEST(GetterTest, DifSizeUneq)
+        1:   50-block  0
+call    0 returned 1
+call    1 returned 1
+------------------
+_ZN27GetterTest_DifSizeUneq_TestD2Ev:
+function _ZN27GetterTest_DifSizeUneq_TestD2Ev called 1 returned 100% blocks executed 100%
+        1:   50:TEST(GetterTest, DifSizeUneq)
+        1:   50-block  0
+call    0 returned 1
+------------------
+_ZN27GetterTest_DifSizeUneq_Test8TestBodyEv:
+function _ZN27GetterTest_DifSizeUneq_Test8TestBodyEv called 1 returned 100% blocks executed 35%
+        1:   50:TEST(GetterTest, DifSizeUneq)
+        -:   51:{
+        1:   52:    CircularBuffer<int> a(5);
+        1:   52-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   53:    a.push_back(1);
+        1:   53-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+    $$$$$:   53-block  1
+        1:   54:    a.push_back(2);
+        1:   54-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+    $$$$$:   54-block  1
+        1:   55:    CircularBuffer<int> b(5);
+        1:   55-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   56:    b.push_back(1);
+        1:   56-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+    $$$$$:   56-block  1
+        1:   57:    b.push_back(2);
+        1:   57-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+    $$$$$:   57-block  1
+        1:   58:    b.push_back(3);
+        1:   58-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+    $$$$$:   58-block  1
+        1:   59:    b.push_back(4);
+        1:   59-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+    $$$$$:   59-block  1
+       1*:   60:    EXPECT_TRUE(a != b);
+        1:   60-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+branch  3 taken 0 (fallthrough)
+branch  4 taken 1
+    %%%%%:   60-block  1
+call    5 never executed
+branch  6 never executed (fallthrough)
+branch  7 never executed (throw)
+    %%%%%:   60-block  2
+call    8 never executed
+branch  9 never executed (fallthrough)
+branch 10 never executed (throw)
+    %%%%%:   60-block  3
+call   11 never executed
+call   12 never executed
+branch 13 never executed (fallthrough)
+branch 14 never executed (throw)
+    %%%%%:   60-block  4
+call   15 never executed
+branch 16 never executed (fallthrough)
+branch 17 never executed (throw)
+    %%%%%:   60-block  5
+call   18 never executed
+call   19 never executed
+call   20 never executed
+        1:   60-block  6
+call   21 returned 1
+    $$$$$:   60-block  7
+call   22 never executed
+    $$$$$:   60-block  8
+call   23 never executed
+    $$$$$:   60-block  9
+    $$$$$:   60-block 10
+    $$$$$:   60-block 11
+call   24 never executed
+    $$$$$:   60-block 12
+    $$$$$:   60-block 13
+call   25 never executed
+        1:   61:}
+call    0 returned 1
+call    1 returned 1
+    $$$$$:   61-block  0
+call    2 never executed
+    $$$$$:   61-block  1
+call    3 never executed
+------------------
+        -:   62:
+        4:   63:TEST(GetterTest, DifCapacityUneq)
+        -:   64:{
+        1:   65:    CircularBuffer<int> a(5,3);
+        1:   66:    CircularBuffer<int> b(7,3);
+       1*:   67:    EXPECT_TRUE(a != b);
+        1:   68:}
+------------------
+_ZN31GetterTest_DifCapacityUneq_TestC2Ev:
+function _ZN31GetterTest_DifCapacityUneq_TestC2Ev called 1 returned 100% blocks executed 100%
+        1:   63:TEST(GetterTest, DifCapacityUneq)
+        1:   63-block  0
+call    0 returned 1
+------------------
+_ZN31GetterTest_DifCapacityUneq_TestD0Ev:
+function _ZN31GetterTest_DifCapacityUneq_TestD0Ev called 1 returned 100% blocks executed 100%
+        1:   63:TEST(GetterTest, DifCapacityUneq)
+        1:   63-block  0
+call    0 returned 1
+call    1 returned 1
+------------------
+_ZN31GetterTest_DifCapacityUneq_TestD2Ev:
+function _ZN31GetterTest_DifCapacityUneq_TestD2Ev called 1 returned 100% blocks executed 100%
+        1:   63:TEST(GetterTest, DifCapacityUneq)
+        1:   63-block  0
+call    0 returned 1
+------------------
+_ZN31GetterTest_DifCapacityUneq_Test8TestBodyEv:
+function _ZN31GetterTest_DifCapacityUneq_Test8TestBodyEv called 1 returned 100% blocks executed 29%
+        1:   63:TEST(GetterTest, DifCapacityUneq)
+        -:   64:{
+        1:   65:    CircularBuffer<int> a(5,3);
+        1:   65-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+    $$$$$:   65-block  1
+        1:   66:    CircularBuffer<int> b(7,3);
+        1:   66-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+    $$$$$:   66-block  1
+       1*:   67:    EXPECT_TRUE(a != b);
+        1:   67-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+branch  3 taken 0 (fallthrough)
+branch  4 taken 1
+    %%%%%:   67-block  1
+call    5 never executed
+branch  6 never executed (fallthrough)
+branch  7 never executed (throw)
+    %%%%%:   67-block  2
+call    8 never executed
+branch  9 never executed (fallthrough)
+branch 10 never executed (throw)
+    %%%%%:   67-block  3
+call   11 never executed
+call   12 never executed
+branch 13 never executed (fallthrough)
+branch 14 never executed (throw)
+    %%%%%:   67-block  4
+call   15 never executed
+branch 16 never executed (fallthrough)
+branch 17 never executed (throw)
+    %%%%%:   67-block  5
+call   18 never executed
+call   19 never executed
+call   20 never executed
+        1:   67-block  6
+call   21 returned 1
+    $$$$$:   67-block  7
+call   22 never executed
+    $$$$$:   67-block  8
+call   23 never executed
+    $$$$$:   67-block  9
+    $$$$$:   67-block 10
+    $$$$$:   67-block 11
+call   24 never executed
+    $$$$$:   67-block 12
+    $$$$$:   67-block 13
+call   25 never executed
+        1:   68:}
+call    0 returned 1
+call    1 returned 1
+    $$$$$:   68-block  0
+call    2 never executed
+    $$$$$:   68-block  1
+call    3 never executed
+------------------
+        -:   69:
+        4:   70:TEST(GetterTest, UnequalityFalse)
+        -:   71:{
+        1:   72:    CircularBuffer<int> a(100);
+        1:   73:    CircularBuffer<int> b(100);
+      101:   74:    for (int i = 0; i < 100; i++)
+        -:   75:    {
+      100:   76:        a.push_back(i);
+      100:   77:        b.push_back(i);
+        -:   78:    }
+        1:   79:    b[96] = 502;
+       1*:   80:    EXPECT_TRUE(a != b);
+        1:   81:}
+------------------
+_ZN31GetterTest_UnequalityFalse_TestC2Ev:
+function _ZN31GetterTest_UnequalityFalse_TestC2Ev called 1 returned 100% blocks executed 100%
+        1:   70:TEST(GetterTest, UnequalityFalse)
+        1:   70-block  0
+call    0 returned 1
+------------------
+_ZN31GetterTest_UnequalityFalse_TestD0Ev:
+function _ZN31GetterTest_UnequalityFalse_TestD0Ev called 1 returned 100% blocks executed 100%
+        1:   70:TEST(GetterTest, UnequalityFalse)
+        1:   70-block  0
+call    0 returned 1
+call    1 returned 1
+------------------
+_ZN31GetterTest_UnequalityFalse_TestD2Ev:
+function _ZN31GetterTest_UnequalityFalse_TestD2Ev called 1 returned 100% blocks executed 100%
+        1:   70:TEST(GetterTest, UnequalityFalse)
+        1:   70-block  0
+call    0 returned 1
+------------------
+_ZN31GetterTest_UnequalityFalse_Test8TestBodyEv:
+function _ZN31GetterTest_UnequalityFalse_Test8TestBodyEv called 1 returned 100% blocks executed 40%
+        1:   70:TEST(GetterTest, UnequalityFalse)
+        -:   71:{
+        1:   72:    CircularBuffer<int> a(100);
+        1:   72-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   73:    CircularBuffer<int> b(100);
+        1:   73-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+      101:   74:    for (int i = 0; i < 100; i++)
+        1:   74-block  0
+      100:   74-block  1
+      101:   74-block  2
+branch  0 taken 100
+branch  1 taken 1 (fallthrough)
+        -:   75:    {
+      100:   76:        a.push_back(i);
+      100:   76-block  0
+call    0 returned 100
+branch  1 taken 100 (fallthrough)
+branch  2 taken 0 (throw)
+      100:   77:        b.push_back(i);
+      100:   77-block  0
+call    0 returned 100
+branch  1 taken 100 (fallthrough)
+branch  2 taken 0 (throw)
+        -:   78:    }
+        1:   79:    b[96] = 502;
+        1:   79-block  0
+call    0 returned 1
+       1*:   80:    EXPECT_TRUE(a != b);
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+branch  3 taken 0 (fallthrough)
+branch  4 taken 1
+    %%%%%:   80-block  0
+call    5 never executed
+branch  6 never executed (fallthrough)
+branch  7 never executed (throw)
+    %%%%%:   80-block  1
+call    8 never executed
+branch  9 never executed (fallthrough)
+branch 10 never executed (throw)
+    %%%%%:   80-block  2
+call   11 never executed
+call   12 never executed
+branch 13 never executed (fallthrough)
+branch 14 never executed (throw)
+    %%%%%:   80-block  3
+call   15 never executed
+branch 16 never executed (fallthrough)
+branch 17 never executed (throw)
+    %%%%%:   80-block  4
+call   18 never executed
+call   19 never executed
+call   20 never executed
+        1:   80-block  5
+call   21 returned 1
+    $$$$$:   80-block  6
+call   22 never executed
+    $$$$$:   80-block  7
+call   23 never executed
+    $$$$$:   80-block  8
+    $$$$$:   80-block  9
+    $$$$$:   80-block 10
+call   24 never executed
+    $$$$$:   80-block 11
+    $$$$$:   80-block 12
+call   25 never executed
+        1:   81:}
+call    0 returned 1
+call    1 returned 1
+    $$$$$:   81-block  0
+call    2 never executed
+    $$$$$:   81-block  1
+call    3 never executed
+------------------

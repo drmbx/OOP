@@ -1,0 +1,2359 @@
+        -:    0:Source:/home/drmbx/CLionProjects/OOP/CircularBuffer/test/ChangeTest.cpp
+        -:    0:Graph:/home/drmbx/CLionProjects/OOP/CircularBuffer/cmake-build-debug-coverage/test/CMakeFiles/Tests.dir/ChangeTest.cpp.gcno
+        -:    0:Data:/home/drmbx/CLionProjects/OOP/CircularBuffer/cmake-build-debug-coverage/test/CMakeFiles/Tests.dir/ChangeTest.cpp.gcda
+        -:    0:Runs:1
+        -:    1:#include "gtest/gtest.h"
+        -:    2:#include "CircularBuffer.h"
+        -:    3:#include "TestUtils.h"
+        -:    4:
+        4:    5:TEST(ChangeTest, SetZeroCapacity)
+        -:    6:{
+        1:    7:CircularBuffer<int> a(5, 123);
+        1:    8:a.set_capacity(0);
+       1*:    9:EXPECT_EQ(a.capacity(), 0);
+        1:   10:}
+------------------
+_ZN31ChangeTest_SetZeroCapacity_TestC2Ev:
+function _ZN31ChangeTest_SetZeroCapacity_TestC2Ev called 1 returned 100% blocks executed 100%
+        1:    5:TEST(ChangeTest, SetZeroCapacity)
+        1:    5-block  0
+call    0 returned 1
+------------------
+_ZN31ChangeTest_SetZeroCapacity_TestD0Ev:
+function _ZN31ChangeTest_SetZeroCapacity_TestD0Ev called 1 returned 100% blocks executed 100%
+        1:    5:TEST(ChangeTest, SetZeroCapacity)
+        1:    5-block  0
+call    0 returned 1
+call    1 returned 1
+------------------
+_ZN31ChangeTest_SetZeroCapacity_TestD2Ev:
+function _ZN31ChangeTest_SetZeroCapacity_TestD2Ev called 1 returned 100% blocks executed 100%
+        1:    5:TEST(ChangeTest, SetZeroCapacity)
+        1:    5-block  0
+call    0 returned 1
+------------------
+_ZN31ChangeTest_SetZeroCapacity_Test8TestBodyEv:
+function _ZN31ChangeTest_SetZeroCapacity_Test8TestBodyEv called 1 returned 100% blocks executed 32%
+        1:    5:TEST(ChangeTest, SetZeroCapacity)
+        -:    6:{
+        1:    7:CircularBuffer<int> a(5, 123);
+        1:    7-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+    $$$$$:    7-block  1
+        1:    8:a.set_capacity(0);
+        1:    8-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+       1*:    9:EXPECT_EQ(a.capacity(), 0);
+        1:    9-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:    9-block  1
+call    4 returned 1
+branch  5 taken 0 (fallthrough)
+branch  6 taken 1
+    %%%%%:    9-block  2
+call    7 never executed
+branch  8 never executed (fallthrough)
+branch  9 never executed (throw)
+    %%%%%:    9-block  3
+call   10 never executed
+call   11 never executed
+branch 12 never executed (fallthrough)
+branch 13 never executed (throw)
+    %%%%%:    9-block  4
+call   14 never executed
+branch 15 never executed (fallthrough)
+branch 16 never executed (throw)
+    %%%%%:    9-block  5
+call   17 never executed
+call   18 never executed
+        1:    9-block  6
+call   19 returned 1
+    $$$$$:    9-block  7
+    $$$$$:    9-block  8
+    $$$$$:    9-block  9
+call   20 never executed
+    $$$$$:    9-block 10
+    $$$$$:    9-block 11
+call   21 never executed
+    $$$$$:    9-block 12
+    $$$$$:    9-block 13
+call   22 never executed
+        1:   10:}
+call    0 returned 1
+    $$$$$:   10-block  0
+call    1 never executed
+------------------
+        -:   11:
+        4:   12:TEST(ChangeTest, SetSameCapacity)
+        -:   13:{
+        1:   14:CircularBuffer<int> a(5, 123);
+        1:   15:a.set_capacity(5);
+       1*:   16:EXPECT_EQ(a.capacity(), 5);
+        1:   17:}
+------------------
+_ZN31ChangeTest_SetSameCapacity_TestC2Ev:
+function _ZN31ChangeTest_SetSameCapacity_TestC2Ev called 1 returned 100% blocks executed 100%
+        1:   12:TEST(ChangeTest, SetSameCapacity)
+        1:   12-block  0
+call    0 returned 1
+------------------
+_ZN31ChangeTest_SetSameCapacity_TestD0Ev:
+function _ZN31ChangeTest_SetSameCapacity_TestD0Ev called 1 returned 100% blocks executed 100%
+        1:   12:TEST(ChangeTest, SetSameCapacity)
+        1:   12-block  0
+call    0 returned 1
+call    1 returned 1
+------------------
+_ZN31ChangeTest_SetSameCapacity_TestD2Ev:
+function _ZN31ChangeTest_SetSameCapacity_TestD2Ev called 1 returned 100% blocks executed 100%
+        1:   12:TEST(ChangeTest, SetSameCapacity)
+        1:   12-block  0
+call    0 returned 1
+------------------
+_ZN31ChangeTest_SetSameCapacity_Test8TestBodyEv:
+function _ZN31ChangeTest_SetSameCapacity_Test8TestBodyEv called 1 returned 100% blocks executed 32%
+        1:   12:TEST(ChangeTest, SetSameCapacity)
+        -:   13:{
+        1:   14:CircularBuffer<int> a(5, 123);
+        1:   14-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+    $$$$$:   14-block  1
+        1:   15:a.set_capacity(5);
+        1:   15-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+       1*:   16:EXPECT_EQ(a.capacity(), 5);
+        1:   16-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   16-block  1
+call    4 returned 1
+branch  5 taken 0 (fallthrough)
+branch  6 taken 1
+    %%%%%:   16-block  2
+call    7 never executed
+branch  8 never executed (fallthrough)
+branch  9 never executed (throw)
+    %%%%%:   16-block  3
+call   10 never executed
+call   11 never executed
+branch 12 never executed (fallthrough)
+branch 13 never executed (throw)
+    %%%%%:   16-block  4
+call   14 never executed
+branch 15 never executed (fallthrough)
+branch 16 never executed (throw)
+    %%%%%:   16-block  5
+call   17 never executed
+call   18 never executed
+        1:   16-block  6
+call   19 returned 1
+    $$$$$:   16-block  7
+    $$$$$:   16-block  8
+    $$$$$:   16-block  9
+call   20 never executed
+    $$$$$:   16-block 10
+    $$$$$:   16-block 11
+call   21 never executed
+    $$$$$:   16-block 12
+    $$$$$:   16-block 13
+call   22 never executed
+        1:   17:}
+call    0 returned 1
+    $$$$$:   17-block  0
+call    1 never executed
+------------------
+        -:   18:
+        4:   19:TEST(ChangeTest, SetGreaterCapacity) {
+        1:   20:    CircularBuffer<int> a(5, 123);
+        1:   21:    a.set_capacity(15);
+       1*:   22:    EXPECT_EQ(a.capacity(), 15);
+        1:   23:}
+------------------
+_ZN34ChangeTest_SetGreaterCapacity_TestC2Ev:
+function _ZN34ChangeTest_SetGreaterCapacity_TestC2Ev called 1 returned 100% blocks executed 100%
+        1:   19:TEST(ChangeTest, SetGreaterCapacity) {
+        1:   19-block  0
+call    0 returned 1
+------------------
+_ZN34ChangeTest_SetGreaterCapacity_TestD0Ev:
+function _ZN34ChangeTest_SetGreaterCapacity_TestD0Ev called 1 returned 100% blocks executed 100%
+        1:   19:TEST(ChangeTest, SetGreaterCapacity) {
+        1:   19-block  0
+call    0 returned 1
+call    1 returned 1
+------------------
+_ZN34ChangeTest_SetGreaterCapacity_TestD2Ev:
+function _ZN34ChangeTest_SetGreaterCapacity_TestD2Ev called 1 returned 100% blocks executed 100%
+        1:   19:TEST(ChangeTest, SetGreaterCapacity) {
+        1:   19-block  0
+call    0 returned 1
+------------------
+_ZN34ChangeTest_SetGreaterCapacity_Test8TestBodyEv:
+function _ZN34ChangeTest_SetGreaterCapacity_Test8TestBodyEv called 1 returned 100% blocks executed 32%
+        1:   19:TEST(ChangeTest, SetGreaterCapacity) {
+        1:   20:    CircularBuffer<int> a(5, 123);
+        1:   20-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+    $$$$$:   20-block  1
+        1:   21:    a.set_capacity(15);
+        1:   21-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+       1*:   22:    EXPECT_EQ(a.capacity(), 15);
+        1:   22-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   22-block  1
+call    4 returned 1
+branch  5 taken 0 (fallthrough)
+branch  6 taken 1
+    %%%%%:   22-block  2
+call    7 never executed
+branch  8 never executed (fallthrough)
+branch  9 never executed (throw)
+    %%%%%:   22-block  3
+call   10 never executed
+call   11 never executed
+branch 12 never executed (fallthrough)
+branch 13 never executed (throw)
+    %%%%%:   22-block  4
+call   14 never executed
+branch 15 never executed (fallthrough)
+branch 16 never executed (throw)
+    %%%%%:   22-block  5
+call   17 never executed
+call   18 never executed
+        1:   22-block  6
+call   19 returned 1
+    $$$$$:   22-block  7
+    $$$$$:   22-block  8
+    $$$$$:   22-block  9
+call   20 never executed
+    $$$$$:   22-block 10
+    $$$$$:   22-block 11
+call   21 never executed
+    $$$$$:   22-block 12
+    $$$$$:   22-block 13
+call   22 never executed
+        1:   23:}
+call    0 returned 1
+    $$$$$:   23-block  0
+call    1 never executed
+------------------
+        -:   24:
+        4:   25:TEST(ChangeTest, SetLesserCapacity) {
+        1:   26:    CircularBuffer<int> a(5, 123);
+        1:   27:    a.set_capacity(3);
+       1*:   28:    EXPECT_EQ(a.capacity(), 3);
+        1:   29:}
+------------------
+_ZN33ChangeTest_SetLesserCapacity_TestC2Ev:
+function _ZN33ChangeTest_SetLesserCapacity_TestC2Ev called 1 returned 100% blocks executed 100%
+        1:   25:TEST(ChangeTest, SetLesserCapacity) {
+        1:   25-block  0
+call    0 returned 1
+------------------
+_ZN33ChangeTest_SetLesserCapacity_TestD0Ev:
+function _ZN33ChangeTest_SetLesserCapacity_TestD0Ev called 1 returned 100% blocks executed 100%
+        1:   25:TEST(ChangeTest, SetLesserCapacity) {
+        1:   25-block  0
+call    0 returned 1
+call    1 returned 1
+------------------
+_ZN33ChangeTest_SetLesserCapacity_TestD2Ev:
+function _ZN33ChangeTest_SetLesserCapacity_TestD2Ev called 1 returned 100% blocks executed 100%
+        1:   25:TEST(ChangeTest, SetLesserCapacity) {
+        1:   25-block  0
+call    0 returned 1
+------------------
+_ZN33ChangeTest_SetLesserCapacity_Test8TestBodyEv:
+function _ZN33ChangeTest_SetLesserCapacity_Test8TestBodyEv called 1 returned 100% blocks executed 32%
+        1:   25:TEST(ChangeTest, SetLesserCapacity) {
+        1:   26:    CircularBuffer<int> a(5, 123);
+        1:   26-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+    $$$$$:   26-block  1
+        1:   27:    a.set_capacity(3);
+        1:   27-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+       1*:   28:    EXPECT_EQ(a.capacity(), 3);
+        1:   28-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   28-block  1
+call    4 returned 1
+branch  5 taken 0 (fallthrough)
+branch  6 taken 1
+    %%%%%:   28-block  2
+call    7 never executed
+branch  8 never executed (fallthrough)
+branch  9 never executed (throw)
+    %%%%%:   28-block  3
+call   10 never executed
+call   11 never executed
+branch 12 never executed (fallthrough)
+branch 13 never executed (throw)
+    %%%%%:   28-block  4
+call   14 never executed
+branch 15 never executed (fallthrough)
+branch 16 never executed (throw)
+    %%%%%:   28-block  5
+call   17 never executed
+call   18 never executed
+        1:   28-block  6
+call   19 returned 1
+    $$$$$:   28-block  7
+    $$$$$:   28-block  8
+    $$$$$:   28-block  9
+call   20 never executed
+    $$$$$:   28-block 10
+    $$$$$:   28-block 11
+call   21 never executed
+    $$$$$:   28-block 12
+    $$$$$:   28-block 13
+call   22 never executed
+        1:   29:}
+call    0 returned 1
+    $$$$$:   29-block  0
+call    1 never executed
+------------------
+        -:   30:
+        4:   31:TEST(ChangeTest, SetSizeGreaterThanCapacity) {
+       2*:   32:    EXPECT_ANY_THROW(
+        -:   33:            {
+        -:   34:                CircularBuffer<int> a(5, 123);
+        -:   35:                a.resize(10);
+        -:   36:            }
+        -:   37:    );
+        1:   38:}
+------------------
+_ZN42ChangeTest_SetSizeGreaterThanCapacity_TestC2Ev:
+function _ZN42ChangeTest_SetSizeGreaterThanCapacity_TestC2Ev called 1 returned 100% blocks executed 100%
+        1:   31:TEST(ChangeTest, SetSizeGreaterThanCapacity) {
+        1:   31-block  0
+call    0 returned 1
+------------------
+_ZN42ChangeTest_SetSizeGreaterThanCapacity_TestD0Ev:
+function _ZN42ChangeTest_SetSizeGreaterThanCapacity_TestD0Ev called 1 returned 100% blocks executed 100%
+        1:   31:TEST(ChangeTest, SetSizeGreaterThanCapacity) {
+        1:   31-block  0
+call    0 returned 1
+call    1 returned 1
+------------------
+_ZN42ChangeTest_SetSizeGreaterThanCapacity_TestD2Ev:
+function _ZN42ChangeTest_SetSizeGreaterThanCapacity_TestD2Ev called 1 returned 100% blocks executed 100%
+        1:   31:TEST(ChangeTest, SetSizeGreaterThanCapacity) {
+        1:   31-block  0
+call    0 returned 1
+------------------
+_ZN42ChangeTest_SetSizeGreaterThanCapacity_Test8TestBodyEv:
+function _ZN42ChangeTest_SetSizeGreaterThanCapacity_Test8TestBodyEv called 1 returned 100% blocks executed 52%
+        1:   31:TEST(ChangeTest, SetSizeGreaterThanCapacity) {
+       2*:   32:    EXPECT_ANY_THROW(
+        1:   32-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0
+        1:   32-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   32-block  2
+branch  6 taken 1 (fallthrough)
+branch  7 taken 0
+        1:   32-block  3
+call    8 returned 1
+branch  9 taken 1 (fallthrough)
+branch 10 taken 0 (throw)
+        1:   32-block  4
+call   11 returned 1
+branch 12 taken 0 (fallthrough)
+branch 13 taken 1 (throw)
+    %%%%%:   32-block  5
+call   14 never executed
+        1:   32-block  6
+branch 15 taken 0 (fallthrough)
+branch 16 taken 1
+    %%%%%:   32-block  7
+    %%%%%:   32-block  8
+call   17 never executed
+branch 18 never executed (fallthrough)
+branch 19 never executed (throw)
+    %%%%%:   32-block  9
+call   20 never executed
+branch 21 never executed (fallthrough)
+branch 22 never executed (throw)
+    %%%%%:   32-block 10
+call   23 never executed
+branch 24 never executed (fallthrough)
+branch 25 never executed (throw)
+    %%%%%:   32-block 11
+call   26 never executed
+call   27 never executed
+    $$$$$:   32-block 12
+        1:   32-block 13
+        1:   32-block 14
+call   28 returned 1
+        1:   32-block 15
+        1:   32-block 16
+call   29 returned 1
+call   30 returned 1
+    $$$$$:   32-block 17
+call   31 never executed
+    $$$$$:   32-block 18
+    $$$$$:   32-block 19
+call   32 never executed
+        -:   33:            {
+        -:   34:                CircularBuffer<int> a(5, 123);
+        -:   35:                a.resize(10);
+        -:   36:            }
+        -:   37:    );
+        1:   38:}
+        1:   38-block  0
+------------------
+        -:   39:
+        4:   40:TEST(ChangeTest, SetSameSize)
+        -:   41:{
+        1:   42:    CircularBuffer<int> a(5, 123);
+        1:   43:    a.resize(5);
+       1*:   44:    EXPECT_EQ(a.size(), 5);
+        1:   45:}
+------------------
+_ZN27ChangeTest_SetSameSize_TestC2Ev:
+function _ZN27ChangeTest_SetSameSize_TestC2Ev called 1 returned 100% blocks executed 100%
+        1:   40:TEST(ChangeTest, SetSameSize)
+        1:   40-block  0
+call    0 returned 1
+------------------
+_ZN27ChangeTest_SetSameSize_TestD0Ev:
+function _ZN27ChangeTest_SetSameSize_TestD0Ev called 1 returned 100% blocks executed 100%
+        1:   40:TEST(ChangeTest, SetSameSize)
+        1:   40-block  0
+call    0 returned 1
+call    1 returned 1
+------------------
+_ZN27ChangeTest_SetSameSize_TestD2Ev:
+function _ZN27ChangeTest_SetSameSize_TestD2Ev called 1 returned 100% blocks executed 100%
+        1:   40:TEST(ChangeTest, SetSameSize)
+        1:   40-block  0
+call    0 returned 1
+------------------
+_ZN27ChangeTest_SetSameSize_Test8TestBodyEv:
+function _ZN27ChangeTest_SetSameSize_Test8TestBodyEv called 1 returned 100% blocks executed 31%
+        1:   40:TEST(ChangeTest, SetSameSize)
+        -:   41:{
+        1:   42:    CircularBuffer<int> a(5, 123);
+        1:   42-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+    $$$$$:   42-block  1
+        1:   43:    a.resize(5);
+        1:   43-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+    $$$$$:   43-block  1
+       1*:   44:    EXPECT_EQ(a.size(), 5);
+        1:   44-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   44-block  1
+call    4 returned 1
+branch  5 taken 0 (fallthrough)
+branch  6 taken 1
+    %%%%%:   44-block  2
+call    7 never executed
+branch  8 never executed (fallthrough)
+branch  9 never executed (throw)
+    %%%%%:   44-block  3
+call   10 never executed
+call   11 never executed
+branch 12 never executed (fallthrough)
+branch 13 never executed (throw)
+    %%%%%:   44-block  4
+call   14 never executed
+branch 15 never executed (fallthrough)
+branch 16 never executed (throw)
+    %%%%%:   44-block  5
+call   17 never executed
+call   18 never executed
+        1:   44-block  6
+call   19 returned 1
+    $$$$$:   44-block  7
+    $$$$$:   44-block  8
+    $$$$$:   44-block  9
+call   20 never executed
+    $$$$$:   44-block 10
+    $$$$$:   44-block 11
+call   21 never executed
+    $$$$$:   44-block 12
+    $$$$$:   44-block 13
+call   22 never executed
+        1:   45:}
+call    0 returned 1
+    $$$$$:   45-block  0
+call    1 never executed
+------------------
+        -:   46:
+        4:   47:TEST(ChangeTest, SetGreaterSize)
+        -:   48:{
+        1:   49:    CircularBuffer<int> a(5);
+        1:   50:    a.push_back(1);
+        1:   51:    a.push_back(2);
+        1:   52:    a.resize(4);
+       1*:   53:    EXPECT_EQ(a.size(), 4);
+        1:   54:}
+------------------
+_ZN30ChangeTest_SetGreaterSize_TestC2Ev:
+function _ZN30ChangeTest_SetGreaterSize_TestC2Ev called 1 returned 100% blocks executed 100%
+        1:   47:TEST(ChangeTest, SetGreaterSize)
+        1:   47-block  0
+call    0 returned 1
+------------------
+_ZN30ChangeTest_SetGreaterSize_TestD0Ev:
+function _ZN30ChangeTest_SetGreaterSize_TestD0Ev called 1 returned 100% blocks executed 100%
+        1:   47:TEST(ChangeTest, SetGreaterSize)
+        1:   47-block  0
+call    0 returned 1
+call    1 returned 1
+------------------
+_ZN30ChangeTest_SetGreaterSize_TestD2Ev:
+function _ZN30ChangeTest_SetGreaterSize_TestD2Ev called 1 returned 100% blocks executed 100%
+        1:   47:TEST(ChangeTest, SetGreaterSize)
+        1:   47-block  0
+call    0 returned 1
+------------------
+_ZN30ChangeTest_SetGreaterSize_Test8TestBodyEv:
+function _ZN30ChangeTest_SetGreaterSize_Test8TestBodyEv called 1 returned 100% blocks executed 34%
+        1:   47:TEST(ChangeTest, SetGreaterSize)
+        -:   48:{
+        1:   49:    CircularBuffer<int> a(5);
+        1:   49-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   50:    a.push_back(1);
+        1:   50-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+    $$$$$:   50-block  1
+        1:   51:    a.push_back(2);
+        1:   51-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+    $$$$$:   51-block  1
+        1:   52:    a.resize(4);
+        1:   52-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+    $$$$$:   52-block  1
+       1*:   53:    EXPECT_EQ(a.size(), 4);
+        1:   53-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   53-block  1
+call    4 returned 1
+branch  5 taken 0 (fallthrough)
+branch  6 taken 1
+    %%%%%:   53-block  2
+call    7 never executed
+branch  8 never executed (fallthrough)
+branch  9 never executed (throw)
+    %%%%%:   53-block  3
+call   10 never executed
+call   11 never executed
+branch 12 never executed (fallthrough)
+branch 13 never executed (throw)
+    %%%%%:   53-block  4
+call   14 never executed
+branch 15 never executed (fallthrough)
+branch 16 never executed (throw)
+    %%%%%:   53-block  5
+call   17 never executed
+call   18 never executed
+        1:   53-block  6
+call   19 returned 1
+    $$$$$:   53-block  7
+    $$$$$:   53-block  8
+    $$$$$:   53-block  9
+call   20 never executed
+    $$$$$:   53-block 10
+    $$$$$:   53-block 11
+call   21 never executed
+    $$$$$:   53-block 12
+    $$$$$:   53-block 13
+call   22 never executed
+        1:   54:}
+call    0 returned 1
+    $$$$$:   54-block  0
+call    1 never executed
+------------------
+        -:   55:
+        4:   56:TEST(ChangeTest, SetLesserSize)
+        -:   57:{
+        1:   58:    CircularBuffer<int> a(5, 123);
+        1:   59:    a.resize(3);
+       1*:   60:    EXPECT_EQ(a.size(), 3);
+        1:   61:}
+------------------
+_ZN29ChangeTest_SetLesserSize_TestC2Ev:
+function _ZN29ChangeTest_SetLesserSize_TestC2Ev called 1 returned 100% blocks executed 100%
+        1:   56:TEST(ChangeTest, SetLesserSize)
+        1:   56-block  0
+call    0 returned 1
+------------------
+_ZN29ChangeTest_SetLesserSize_TestD0Ev:
+function _ZN29ChangeTest_SetLesserSize_TestD0Ev called 1 returned 100% blocks executed 100%
+        1:   56:TEST(ChangeTest, SetLesserSize)
+        1:   56-block  0
+call    0 returned 1
+call    1 returned 1
+------------------
+_ZN29ChangeTest_SetLesserSize_TestD2Ev:
+function _ZN29ChangeTest_SetLesserSize_TestD2Ev called 1 returned 100% blocks executed 100%
+        1:   56:TEST(ChangeTest, SetLesserSize)
+        1:   56-block  0
+call    0 returned 1
+------------------
+_ZN29ChangeTest_SetLesserSize_Test8TestBodyEv:
+function _ZN29ChangeTest_SetLesserSize_Test8TestBodyEv called 1 returned 100% blocks executed 31%
+        1:   56:TEST(ChangeTest, SetLesserSize)
+        -:   57:{
+        1:   58:    CircularBuffer<int> a(5, 123);
+        1:   58-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+    $$$$$:   58-block  1
+        1:   59:    a.resize(3);
+        1:   59-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+    $$$$$:   59-block  1
+       1*:   60:    EXPECT_EQ(a.size(), 3);
+        1:   60-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   60-block  1
+call    4 returned 1
+branch  5 taken 0 (fallthrough)
+branch  6 taken 1
+    %%%%%:   60-block  2
+call    7 never executed
+branch  8 never executed (fallthrough)
+branch  9 never executed (throw)
+    %%%%%:   60-block  3
+call   10 never executed
+call   11 never executed
+branch 12 never executed (fallthrough)
+branch 13 never executed (throw)
+    %%%%%:   60-block  4
+call   14 never executed
+branch 15 never executed (fallthrough)
+branch 16 never executed (throw)
+    %%%%%:   60-block  5
+call   17 never executed
+call   18 never executed
+        1:   60-block  6
+call   19 returned 1
+    $$$$$:   60-block  7
+    $$$$$:   60-block  8
+    $$$$$:   60-block  9
+call   20 never executed
+    $$$$$:   60-block 10
+    $$$$$:   60-block 11
+call   21 never executed
+    $$$$$:   60-block 12
+    $$$$$:   60-block 13
+call   22 never executed
+        1:   61:}
+call    0 returned 1
+    $$$$$:   61-block  0
+call    1 never executed
+------------------
+        -:   62:
+        4:   63:TEST(ChangeTest, TrivialAssignment)
+        -:   64:{
+       1*:   65:    EXPECT_NO_THROW({
+        -:   66:        CircularBuffer<int> a(5, 123);
+        -:   67:        a = a;
+        1:   68:    });
+        1:   69:}
+------------------
+_ZN33ChangeTest_TrivialAssignment_TestC2Ev:
+function _ZN33ChangeTest_TrivialAssignment_TestC2Ev called 1 returned 100% blocks executed 100%
+        1:   63:TEST(ChangeTest, TrivialAssignment)
+        1:   63-block  0
+call    0 returned 1
+------------------
+_ZN33ChangeTest_TrivialAssignment_TestD0Ev:
+function _ZN33ChangeTest_TrivialAssignment_TestD0Ev called 1 returned 100% blocks executed 100%
+        1:   63:TEST(ChangeTest, TrivialAssignment)
+        1:   63-block  0
+call    0 returned 1
+call    1 returned 1
+------------------
+_ZN33ChangeTest_TrivialAssignment_TestD2Ev:
+function _ZN33ChangeTest_TrivialAssignment_TestD2Ev called 1 returned 100% blocks executed 100%
+        1:   63:TEST(ChangeTest, TrivialAssignment)
+        1:   63-block  0
+call    0 returned 1
+------------------
+_ZN33ChangeTest_TrivialAssignment_Test8TestBodyEv:
+function _ZN33ChangeTest_TrivialAssignment_Test8TestBodyEv called 1 returned 100% blocks executed 20%
+        1:   63:TEST(ChangeTest, TrivialAssignment)
+        -:   64:{
+       1*:   65:    EXPECT_NO_THROW({
+        1:   65-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0
+        1:   65-block  1
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:   65-block  2
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0
+        1:   65-block  3
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   65-block  4
+call   12 returned 1
+branch 13 taken 1 (fallthrough)
+branch 14 taken 0 (throw)
+        1:   65-block  5
+call   15 returned 1
+    %%%%%:   65-block  6
+call   16 never executed
+branch 17 never executed (fallthrough)
+branch 18 never executed (throw)
+    %%%%%:   65-block  7
+call   19 never executed
+branch 20 never executed (fallthrough)
+branch 21 never executed (throw)
+    %%%%%:   65-block  8
+call   22 never executed
+call   23 never executed
+branch 24 never executed (fallthrough)
+branch 25 never executed (throw)
+    %%%%%:   65-block  9
+call   26 never executed
+branch 27 never executed (fallthrough)
+branch 28 never executed (throw)
+    %%%%%:   65-block 10
+call   29 never executed
+call   30 never executed
+call   31 never executed
+    $$$$$:   65-block 11
+    $$$$$:   65-block 12
+call   32 never executed
+    $$$$$:   65-block 13
+branch 33 never executed
+branch 34 never executed
+    $$$$$:   65-block 14
+call   35 never executed
+call   36 never executed
+branch 37 never executed (fallthrough)
+branch 38 never executed (throw)
+    $$$$$:   65-block 15
+call   39 never executed
+branch 40 never executed (fallthrough)
+branch 41 never executed (throw)
+    $$$$$:   65-block 16
+call   42 never executed
+branch 43 never executed (fallthrough)
+branch 44 never executed (throw)
+    $$$$$:   65-block 17
+call   45 never executed
+call   46 never executed
+branch 47 never executed (fallthrough)
+branch 48 never executed (throw)
+    $$$$$:   65-block 18
+call   49 never executed
+call   50 never executed
+branch 51 never executed (fallthrough)
+branch 52 never executed (throw)
+    $$$$$:   65-block 19
+call   53 never executed
+branch 54 never executed (fallthrough)
+branch 55 never executed (throw)
+    $$$$$:   65-block 20
+    $$$$$:   65-block 21
+call   56 never executed
+    $$$$$:   65-block 22
+call   57 never executed
+call   58 never executed
+branch 59 never executed (fallthrough)
+branch 60 never executed (throw)
+    $$$$$:   65-block 23
+    $$$$$:   65-block 24
+call   61 never executed
+branch 62 never executed (fallthrough)
+branch 63 never executed (throw)
+    $$$$$:   65-block 25
+call   64 never executed
+    $$$$$:   65-block 26
+    $$$$$:   65-block 27
+call   65 never executed
+    $$$$$:   65-block 28
+call   66 never executed
+    $$$$$:   65-block 29
+call   67 never executed
+    $$$$$:   65-block 30
+call   68 never executed
+    $$$$$:   65-block 31
+    $$$$$:   65-block 32
+    $$$$$:   65-block 33
+call   69 never executed
+    $$$$$:   65-block 34
+        -:   66:        CircularBuffer<int> a(5, 123);
+        -:   67:        a = a;
+        1:   68:    });
+        1:   68-block  0
+call    0 returned 1
+    $$$$$:   68-block  1
+call    1 never executed
+        1:   69:}
+------------------
+        -:   70:
+        4:   71:TEST(ChangeTest, Assignment)
+        -:   72:{
+        1:   73:    CircularBuffer<int> a(5, 123);
+        1:   74:    CircularBuffer<int> b(7, 321);
+        1:   75:    a.operator=(b);
+       1*:   76:    EXPECT_EQ(a.capacity(), 7);
+        1:   77:}
+------------------
+_ZN26ChangeTest_Assignment_TestC2Ev:
+function _ZN26ChangeTest_Assignment_TestC2Ev called 1 returned 100% blocks executed 100%
+        1:   71:TEST(ChangeTest, Assignment)
+        1:   71-block  0
+call    0 returned 1
+------------------
+_ZN26ChangeTest_Assignment_TestD0Ev:
+function _ZN26ChangeTest_Assignment_TestD0Ev called 1 returned 100% blocks executed 100%
+        1:   71:TEST(ChangeTest, Assignment)
+        1:   71-block  0
+call    0 returned 1
+call    1 returned 1
+------------------
+_ZN26ChangeTest_Assignment_TestD2Ev:
+function _ZN26ChangeTest_Assignment_TestD2Ev called 1 returned 100% blocks executed 100%
+        1:   71:TEST(ChangeTest, Assignment)
+        1:   71-block  0
+call    0 returned 1
+------------------
+_ZN26ChangeTest_Assignment_Test8TestBodyEv:
+function _ZN26ChangeTest_Assignment_Test8TestBodyEv called 1 returned 100% blocks executed 33%
+        1:   71:TEST(ChangeTest, Assignment)
+        -:   72:{
+        1:   73:    CircularBuffer<int> a(5, 123);
+        1:   73-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+    $$$$$:   73-block  1
+        1:   74:    CircularBuffer<int> b(7, 321);
+        1:   74-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+    $$$$$:   74-block  1
+        1:   75:    a.operator=(b);
+        1:   75-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+       1*:   76:    EXPECT_EQ(a.capacity(), 7);
+        1:   76-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   76-block  1
+call    4 returned 1
+branch  5 taken 0 (fallthrough)
+branch  6 taken 1
+    %%%%%:   76-block  2
+call    7 never executed
+branch  8 never executed (fallthrough)
+branch  9 never executed (throw)
+    %%%%%:   76-block  3
+call   10 never executed
+call   11 never executed
+branch 12 never executed (fallthrough)
+branch 13 never executed (throw)
+    %%%%%:   76-block  4
+call   14 never executed
+branch 15 never executed (fallthrough)
+branch 16 never executed (throw)
+    %%%%%:   76-block  5
+call   17 never executed
+call   18 never executed
+        1:   76-block  6
+call   19 returned 1
+    $$$$$:   76-block  7
+    $$$$$:   76-block  8
+    $$$$$:   76-block  9
+call   20 never executed
+    $$$$$:   76-block 10
+    $$$$$:   76-block 11
+call   21 never executed
+    $$$$$:   76-block 12
+    $$$$$:   76-block 13
+call   22 never executed
+        1:   77:}
+call    0 returned 1
+call    1 returned 1
+    $$$$$:   77-block  0
+call    2 never executed
+    $$$$$:   77-block  1
+call    3 never executed
+------------------
+        -:   78:
+        4:   79:TEST(ChangeTest, Swap)
+        -:   80:{
+       1*:   81:    EXPECT_NO_THROW({
+        -:   82:                        CircularBuffer<int> a(5, 123);
+        -:   83:                        CircularBuffer<int> b(7, 321);
+        -:   84:                        a.swap(b);
+        1:   85:                    });
+        1:   86:}
+------------------
+_ZN20ChangeTest_Swap_TestC2Ev:
+function _ZN20ChangeTest_Swap_TestC2Ev called 1 returned 100% blocks executed 100%
+        1:   79:TEST(ChangeTest, Swap)
+        1:   79-block  0
+call    0 returned 1
+------------------
+_ZN20ChangeTest_Swap_TestD0Ev:
+function _ZN20ChangeTest_Swap_TestD0Ev called 1 returned 100% blocks executed 100%
+        1:   79:TEST(ChangeTest, Swap)
+        1:   79-block  0
+call    0 returned 1
+call    1 returned 1
+------------------
+_ZN20ChangeTest_Swap_TestD2Ev:
+function _ZN20ChangeTest_Swap_TestD2Ev called 1 returned 100% blocks executed 100%
+        1:   79:TEST(ChangeTest, Swap)
+        1:   79-block  0
+call    0 returned 1
+------------------
+_ZN20ChangeTest_Swap_Test8TestBodyEv:
+function _ZN20ChangeTest_Swap_Test8TestBodyEv called 1 returned 100% blocks executed 22%
+        1:   79:TEST(ChangeTest, Swap)
+        -:   80:{
+       1*:   81:    EXPECT_NO_THROW({
+        1:   81-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0
+        1:   81-block  1
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:   81-block  2
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0
+        1:   81-block  3
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   81-block  4
+call   12 returned 1
+branch 13 taken 1 (fallthrough)
+branch 14 taken 0 (throw)
+        1:   81-block  5
+call   15 returned 1
+branch 16 taken 1 (fallthrough)
+branch 17 taken 0 (throw)
+        1:   81-block  6
+call   18 returned 1
+call   19 returned 1
+    %%%%%:   81-block  7
+call   20 never executed
+branch 21 never executed (fallthrough)
+branch 22 never executed (throw)
+    %%%%%:   81-block  8
+call   23 never executed
+branch 24 never executed (fallthrough)
+branch 25 never executed (throw)
+    %%%%%:   81-block  9
+call   26 never executed
+call   27 never executed
+branch 28 never executed (fallthrough)
+branch 29 never executed (throw)
+    %%%%%:   81-block 10
+call   30 never executed
+branch 31 never executed (fallthrough)
+branch 32 never executed (throw)
+    %%%%%:   81-block 11
+call   33 never executed
+call   34 never executed
+call   35 never executed
+    $$$$$:   81-block 12
+    $$$$$:   81-block 13
+    $$$$$:   81-block 14
+call   36 never executed
+    $$$$$:   81-block 15
+call   37 never executed
+    $$$$$:   81-block 16
+branch 38 never executed
+branch 39 never executed
+    $$$$$:   81-block 17
+call   40 never executed
+call   41 never executed
+branch 42 never executed (fallthrough)
+branch 43 never executed (throw)
+    $$$$$:   81-block 18
+call   44 never executed
+branch 45 never executed (fallthrough)
+branch 46 never executed (throw)
+    $$$$$:   81-block 19
+call   47 never executed
+branch 48 never executed (fallthrough)
+branch 49 never executed (throw)
+    $$$$$:   81-block 20
+call   50 never executed
+call   51 never executed
+branch 52 never executed (fallthrough)
+branch 53 never executed (throw)
+    $$$$$:   81-block 21
+call   54 never executed
+call   55 never executed
+branch 56 never executed (fallthrough)
+branch 57 never executed (throw)
+    $$$$$:   81-block 22
+call   58 never executed
+branch 59 never executed (fallthrough)
+branch 60 never executed (throw)
+    $$$$$:   81-block 23
+    $$$$$:   81-block 24
+call   61 never executed
+    $$$$$:   81-block 25
+call   62 never executed
+call   63 never executed
+branch 64 never executed (fallthrough)
+branch 65 never executed (throw)
+    $$$$$:   81-block 26
+    $$$$$:   81-block 27
+call   66 never executed
+branch 67 never executed (fallthrough)
+branch 68 never executed (throw)
+    $$$$$:   81-block 28
+call   69 never executed
+    $$$$$:   81-block 29
+    $$$$$:   81-block 30
+call   70 never executed
+    $$$$$:   81-block 31
+call   71 never executed
+    $$$$$:   81-block 32
+call   72 never executed
+    $$$$$:   81-block 33
+call   73 never executed
+    $$$$$:   81-block 34
+    $$$$$:   81-block 35
+    $$$$$:   81-block 36
+call   74 never executed
+    $$$$$:   81-block 37
+        -:   82:                        CircularBuffer<int> a(5, 123);
+        -:   83:                        CircularBuffer<int> b(7, 321);
+        -:   84:                        a.swap(b);
+        1:   85:                    });
+        1:   85-block  0
+call    0 returned 1
+    $$$$$:   85-block  1
+call    1 never executed
+        1:   86:}
+------------------
+        -:   87:
+        4:   88:TEST(ChangeTest, ZeroCapacityPushBack)
+        -:   89:{
+       2*:   90:    EXPECT_ANY_THROW({
+        -:   91:        CircularBuffer<int> a;
+        -:   92:        a.push_back(5);
+        -:   93:    });
+        1:   94:}
+------------------
+_ZN36ChangeTest_ZeroCapacityPushBack_TestC2Ev:
+function _ZN36ChangeTest_ZeroCapacityPushBack_TestC2Ev called 1 returned 100% blocks executed 100%
+        1:   88:TEST(ChangeTest, ZeroCapacityPushBack)
+        1:   88-block  0
+call    0 returned 1
+------------------
+_ZN36ChangeTest_ZeroCapacityPushBack_TestD0Ev:
+function _ZN36ChangeTest_ZeroCapacityPushBack_TestD0Ev called 1 returned 100% blocks executed 100%
+        1:   88:TEST(ChangeTest, ZeroCapacityPushBack)
+        1:   88-block  0
+call    0 returned 1
+call    1 returned 1
+------------------
+_ZN36ChangeTest_ZeroCapacityPushBack_TestD2Ev:
+function _ZN36ChangeTest_ZeroCapacityPushBack_TestD2Ev called 1 returned 100% blocks executed 100%
+        1:   88:TEST(ChangeTest, ZeroCapacityPushBack)
+        1:   88-block  0
+call    0 returned 1
+------------------
+_ZN36ChangeTest_ZeroCapacityPushBack_Test8TestBodyEv:
+function _ZN36ChangeTest_ZeroCapacityPushBack_Test8TestBodyEv called 1 returned 100% blocks executed 53%
+        1:   88:TEST(ChangeTest, ZeroCapacityPushBack)
+        -:   89:{
+       2*:   90:    EXPECT_ANY_THROW({
+        1:   90-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0
+        1:   90-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   90-block  2
+branch  6 taken 1 (fallthrough)
+branch  7 taken 0
+        1:   90-block  3
+call    8 returned 1
+call    9 returned 1
+branch 10 taken 0 (fallthrough)
+branch 11 taken 1 (throw)
+    %%%%%:   90-block  4
+call   12 never executed
+        1:   90-block  5
+branch 13 taken 0 (fallthrough)
+branch 14 taken 1
+    %%%%%:   90-block  6
+    %%%%%:   90-block  7
+call   15 never executed
+branch 16 never executed (fallthrough)
+branch 17 never executed (throw)
+    %%%%%:   90-block  8
+call   18 never executed
+branch 19 never executed (fallthrough)
+branch 20 never executed (throw)
+    %%%%%:   90-block  9
+call   21 never executed
+branch 22 never executed (fallthrough)
+branch 23 never executed (throw)
+    %%%%%:   90-block 10
+call   24 never executed
+call   25 never executed
+        1:   90-block 11
+        1:   90-block 12
+call   26 returned 1
+        1:   90-block 13
+        1:   90-block 14
+call   27 returned 1
+call   28 returned 1
+    $$$$$:   90-block 15
+call   29 never executed
+    $$$$$:   90-block 16
+    $$$$$:   90-block 17
+call   30 never executed
+        -:   91:        CircularBuffer<int> a;
+        -:   92:        a.push_back(5);
+        -:   93:    });
+        1:   94:}
+        1:   94-block  0
+------------------
+        -:   95:
+        4:   96:TEST(ChangeTest, ZeroCapacityPushFront)
+        -:   97:{
+       2*:   98:    EXPECT_ANY_THROW({
+        -:   99:                         CircularBuffer<int> a;
+        -:  100:                         a.push_front(5);
+        -:  101:                     });
+        1:  102:}
+------------------
+_ZN37ChangeTest_ZeroCapacityPushFront_TestC2Ev:
+function _ZN37ChangeTest_ZeroCapacityPushFront_TestC2Ev called 1 returned 100% blocks executed 100%
+        1:   96:TEST(ChangeTest, ZeroCapacityPushFront)
+        1:   96-block  0
+call    0 returned 1
+------------------
+_ZN37ChangeTest_ZeroCapacityPushFront_TestD0Ev:
+function _ZN37ChangeTest_ZeroCapacityPushFront_TestD0Ev called 1 returned 100% blocks executed 100%
+        1:   96:TEST(ChangeTest, ZeroCapacityPushFront)
+        1:   96-block  0
+call    0 returned 1
+call    1 returned 1
+------------------
+_ZN37ChangeTest_ZeroCapacityPushFront_TestD2Ev:
+function _ZN37ChangeTest_ZeroCapacityPushFront_TestD2Ev called 1 returned 100% blocks executed 100%
+        1:   96:TEST(ChangeTest, ZeroCapacityPushFront)
+        1:   96-block  0
+call    0 returned 1
+------------------
+_ZN37ChangeTest_ZeroCapacityPushFront_Test8TestBodyEv:
+function _ZN37ChangeTest_ZeroCapacityPushFront_Test8TestBodyEv called 1 returned 100% blocks executed 53%
+        1:   96:TEST(ChangeTest, ZeroCapacityPushFront)
+        -:   97:{
+       2*:   98:    EXPECT_ANY_THROW({
+        1:   98-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0
+        1:   98-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   98-block  2
+branch  6 taken 1 (fallthrough)
+branch  7 taken 0
+        1:   98-block  3
+call    8 returned 1
+call    9 returned 1
+branch 10 taken 0 (fallthrough)
+branch 11 taken 1 (throw)
+    %%%%%:   98-block  4
+call   12 never executed
+        1:   98-block  5
+branch 13 taken 0 (fallthrough)
+branch 14 taken 1
+    %%%%%:   98-block  6
+    %%%%%:   98-block  7
+call   15 never executed
+branch 16 never executed (fallthrough)
+branch 17 never executed (throw)
+    %%%%%:   98-block  8
+call   18 never executed
+branch 19 never executed (fallthrough)
+branch 20 never executed (throw)
+    %%%%%:   98-block  9
+call   21 never executed
+branch 22 never executed (fallthrough)
+branch 23 never executed (throw)
+    %%%%%:   98-block 10
+call   24 never executed
+call   25 never executed
+        1:   98-block 11
+        1:   98-block 12
+call   26 returned 1
+        1:   98-block 13
+        1:   98-block 14
+call   27 returned 1
+call   28 returned 1
+    $$$$$:   98-block 15
+call   29 never executed
+    $$$$$:   98-block 16
+    $$$$$:   98-block 17
+call   30 never executed
+        -:   99:                         CircularBuffer<int> a;
+        -:  100:                         a.push_front(5);
+        -:  101:                     });
+        1:  102:}
+        1:  102-block  0
+------------------
+        -:  103:
+        4:  104:TEST(ChangeTest, SizeEqCapacityPushFront)
+        -:  105:{
+        1:  106:    CircularBuffer<int> a(3,1);
+        1:  107:    a.push_front(2);
+       3*:  108:    EXPECT_TRUE(isBufEqVector(a,std::vector<int> {2,1,1}));
+        1:  109:}
+------------------
+_ZN39ChangeTest_SizeEqCapacityPushFront_TestC2Ev:
+function _ZN39ChangeTest_SizeEqCapacityPushFront_TestC2Ev called 1 returned 100% blocks executed 100%
+        1:  104:TEST(ChangeTest, SizeEqCapacityPushFront)
+        1:  104-block  0
+call    0 returned 1
+------------------
+_ZN39ChangeTest_SizeEqCapacityPushFront_TestD0Ev:
+function _ZN39ChangeTest_SizeEqCapacityPushFront_TestD0Ev called 1 returned 100% blocks executed 100%
+        1:  104:TEST(ChangeTest, SizeEqCapacityPushFront)
+        1:  104-block  0
+call    0 returned 1
+call    1 returned 1
+------------------
+_ZN39ChangeTest_SizeEqCapacityPushFront_TestD2Ev:
+function _ZN39ChangeTest_SizeEqCapacityPushFront_TestD2Ev called 1 returned 100% blocks executed 100%
+        1:  104:TEST(ChangeTest, SizeEqCapacityPushFront)
+        1:  104-block  0
+call    0 returned 1
+------------------
+_ZN39ChangeTest_SizeEqCapacityPushFront_Test8TestBodyEv:
+function _ZN39ChangeTest_SizeEqCapacityPushFront_Test8TestBodyEv called 1 returned 100% blocks executed 31%
+        1:  104:TEST(ChangeTest, SizeEqCapacityPushFront)
+        -:  105:{
+        1:  106:    CircularBuffer<int> a(3,1);
+        1:  106-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+    $$$$$:  106-block  1
+        1:  107:    a.push_front(2);
+        1:  107-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+    $$$$$:  107-block  1
+       3*:  108:    EXPECT_TRUE(isBufEqVector(a,std::vector<int> {2,1,1}));
+        1:  108-block  0
+        1:  108-block  1
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  108-block  2
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:  108-block  3
+call    6 returned 1
+call    7 returned 1
+        1:  108-block  4
+call    8 returned 1
+branch  9 taken 0 (fallthrough)
+branch 10 taken 1
+    %%%%%:  108-block  5
+call   11 never executed
+branch 12 never executed (fallthrough)
+branch 13 never executed (throw)
+    %%%%%:  108-block  6
+call   14 never executed
+branch 15 never executed (fallthrough)
+branch 16 never executed (throw)
+    %%%%%:  108-block  7
+call   17 never executed
+call   18 never executed
+branch 19 never executed (fallthrough)
+branch 20 never executed (throw)
+    %%%%%:  108-block  8
+call   21 never executed
+branch 22 never executed (fallthrough)
+branch 23 never executed (throw)
+    %%%%%:  108-block  9
+call   24 never executed
+call   25 never executed
+call   26 never executed
+        1:  108-block 10
+call   27 returned 1
+    $$$$$:  108-block 11
+call   28 never executed
+    $$$$$:  108-block 12
+    $$$$$:  108-block 13
+    $$$$$:  108-block 14
+    $$$$$:  108-block 15
+    $$$$$:  108-block 16
+call   29 never executed
+    $$$$$:  108-block 17
+call   30 never executed
+    $$$$$:  108-block 18
+    $$$$$:  108-block 19
+    $$$$$:  108-block 20
+call   31 never executed
+    $$$$$:  108-block 21
+    $$$$$:  108-block 22
+call   32 never executed
+        1:  109:}
+call    0 returned 1
+    $$$$$:  109-block  0
+call    1 never executed
+------------------
+        -:  110:
+        4:  111:TEST(ChangeTest, SizeNotEqCapacityPushFront)
+        -:  112:{
+        1:  113:    CircularBuffer<int> a(5);
+        1:  114:    a.push_back(1);
+        1:  115:    a.push_back(2);
+        1:  116:    a.push_front(3);
+       3*:  117:    EXPECT_TRUE(isBufEqVector(a,std::vector<int> {3,1,2}));
+        1:  118:}
+------------------
+_ZN42ChangeTest_SizeNotEqCapacityPushFront_TestC2Ev:
+function _ZN42ChangeTest_SizeNotEqCapacityPushFront_TestC2Ev called 1 returned 100% blocks executed 100%
+        1:  111:TEST(ChangeTest, SizeNotEqCapacityPushFront)
+        1:  111-block  0
+call    0 returned 1
+------------------
+_ZN42ChangeTest_SizeNotEqCapacityPushFront_TestD0Ev:
+function _ZN42ChangeTest_SizeNotEqCapacityPushFront_TestD0Ev called 1 returned 100% blocks executed 100%
+        1:  111:TEST(ChangeTest, SizeNotEqCapacityPushFront)
+        1:  111-block  0
+call    0 returned 1
+call    1 returned 1
+------------------
+_ZN42ChangeTest_SizeNotEqCapacityPushFront_TestD2Ev:
+function _ZN42ChangeTest_SizeNotEqCapacityPushFront_TestD2Ev called 1 returned 100% blocks executed 100%
+        1:  111:TEST(ChangeTest, SizeNotEqCapacityPushFront)
+        1:  111-block  0
+call    0 returned 1
+------------------
+_ZN42ChangeTest_SizeNotEqCapacityPushFront_Test8TestBodyEv:
+function _ZN42ChangeTest_SizeNotEqCapacityPushFront_Test8TestBodyEv called 1 returned 100% blocks executed 33%
+        1:  111:TEST(ChangeTest, SizeNotEqCapacityPushFront)
+        -:  112:{
+        1:  113:    CircularBuffer<int> a(5);
+        1:  113-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  114:    a.push_back(1);
+        1:  114-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+    $$$$$:  114-block  1
+        1:  115:    a.push_back(2);
+        1:  115-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+    $$$$$:  115-block  1
+        1:  116:    a.push_front(3);
+        1:  116-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+    $$$$$:  116-block  1
+       3*:  117:    EXPECT_TRUE(isBufEqVector(a,std::vector<int> {3,1,2}));
+        1:  117-block  0
+        1:  117-block  1
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  117-block  2
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:  117-block  3
+call    6 returned 1
+call    7 returned 1
+        1:  117-block  4
+call    8 returned 1
+branch  9 taken 0 (fallthrough)
+branch 10 taken 1
+    %%%%%:  117-block  5
+call   11 never executed
+branch 12 never executed (fallthrough)
+branch 13 never executed (throw)
+    %%%%%:  117-block  6
+call   14 never executed
+branch 15 never executed (fallthrough)
+branch 16 never executed (throw)
+    %%%%%:  117-block  7
+call   17 never executed
+call   18 never executed
+branch 19 never executed (fallthrough)
+branch 20 never executed (throw)
+    %%%%%:  117-block  8
+call   21 never executed
+branch 22 never executed (fallthrough)
+branch 23 never executed (throw)
+    %%%%%:  117-block  9
+call   24 never executed
+call   25 never executed
+call   26 never executed
+        1:  117-block 10
+call   27 returned 1
+    $$$$$:  117-block 11
+call   28 never executed
+    $$$$$:  117-block 12
+    $$$$$:  117-block 13
+    $$$$$:  117-block 14
+    $$$$$:  117-block 15
+    $$$$$:  117-block 16
+call   29 never executed
+    $$$$$:  117-block 17
+call   30 never executed
+    $$$$$:  117-block 18
+    $$$$$:  117-block 19
+    $$$$$:  117-block 20
+call   31 never executed
+    $$$$$:  117-block 21
+    $$$$$:  117-block 22
+call   32 never executed
+        1:  118:}
+call    0 returned 1
+    $$$$$:  118-block  0
+call    1 never executed
+------------------
+        -:  119:
+        4:  120:TEST(ChangeTest, ZeroCapInsert)
+        -:  121:{
+       2*:  122:    EXPECT_ANY_THROW({
+        -:  123:        CircularBuffer<int> a;
+        -:  124:        a.insert(0);
+        -:  125:    });
+        1:  126:}
+------------------
+_ZN29ChangeTest_ZeroCapInsert_TestC2Ev:
+function _ZN29ChangeTest_ZeroCapInsert_TestC2Ev called 1 returned 100% blocks executed 100%
+        1:  120:TEST(ChangeTest, ZeroCapInsert)
+        1:  120-block  0
+call    0 returned 1
+------------------
+_ZN29ChangeTest_ZeroCapInsert_TestD0Ev:
+function _ZN29ChangeTest_ZeroCapInsert_TestD0Ev called 1 returned 100% blocks executed 100%
+        1:  120:TEST(ChangeTest, ZeroCapInsert)
+        1:  120-block  0
+call    0 returned 1
+call    1 returned 1
+------------------
+_ZN29ChangeTest_ZeroCapInsert_TestD2Ev:
+function _ZN29ChangeTest_ZeroCapInsert_TestD2Ev called 1 returned 100% blocks executed 100%
+        1:  120:TEST(ChangeTest, ZeroCapInsert)
+        1:  120-block  0
+call    0 returned 1
+------------------
+_ZN29ChangeTest_ZeroCapInsert_Test8TestBodyEv:
+function _ZN29ChangeTest_ZeroCapInsert_Test8TestBodyEv called 1 returned 100% blocks executed 53%
+        1:  120:TEST(ChangeTest, ZeroCapInsert)
+        -:  121:{
+       2*:  122:    EXPECT_ANY_THROW({
+        1:  122-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0
+        1:  122-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:  122-block  2
+branch  6 taken 1 (fallthrough)
+branch  7 taken 0
+        1:  122-block  3
+call    8 returned 1
+call    9 returned 1
+branch 10 taken 0 (fallthrough)
+branch 11 taken 1 (throw)
+    %%%%%:  122-block  4
+call   12 never executed
+        1:  122-block  5
+branch 13 taken 0 (fallthrough)
+branch 14 taken 1
+    %%%%%:  122-block  6
+    %%%%%:  122-block  7
+call   15 never executed
+branch 16 never executed (fallthrough)
+branch 17 never executed (throw)
+    %%%%%:  122-block  8
+call   18 never executed
+branch 19 never executed (fallthrough)
+branch 20 never executed (throw)
+    %%%%%:  122-block  9
+call   21 never executed
+branch 22 never executed (fallthrough)
+branch 23 never executed (throw)
+    %%%%%:  122-block 10
+call   24 never executed
+call   25 never executed
+        1:  122-block 11
+        1:  122-block 12
+call   26 returned 1
+        1:  122-block 13
+        1:  122-block 14
+call   27 returned 1
+call   28 returned 1
+    $$$$$:  122-block 15
+call   29 never executed
+    $$$$$:  122-block 16
+    $$$$$:  122-block 17
+call   30 never executed
+        -:  123:        CircularBuffer<int> a;
+        -:  124:        a.insert(0);
+        -:  125:    });
+        1:  126:}
+        1:  126-block  0
+------------------
+        -:  127:
+        4:  128:TEST(ChangeTest, FullBufInsert)
+        -:  129:{
+       2*:  130:    EXPECT_ANY_THROW({
+        -:  131:                         CircularBuffer<int> a(5,1);
+        -:  132:                         a.insert(2);
+        -:  133:                     });
+        1:  134:}
+------------------
+_ZN29ChangeTest_FullBufInsert_TestC2Ev:
+function _ZN29ChangeTest_FullBufInsert_TestC2Ev called 1 returned 100% blocks executed 100%
+        1:  128:TEST(ChangeTest, FullBufInsert)
+        1:  128-block  0
+call    0 returned 1
+------------------
+_ZN29ChangeTest_FullBufInsert_TestD0Ev:
+function _ZN29ChangeTest_FullBufInsert_TestD0Ev called 1 returned 100% blocks executed 100%
+        1:  128:TEST(ChangeTest, FullBufInsert)
+        1:  128-block  0
+call    0 returned 1
+call    1 returned 1
+------------------
+_ZN29ChangeTest_FullBufInsert_TestD2Ev:
+function _ZN29ChangeTest_FullBufInsert_TestD2Ev called 1 returned 100% blocks executed 100%
+        1:  128:TEST(ChangeTest, FullBufInsert)
+        1:  128-block  0
+call    0 returned 1
+------------------
+_ZN29ChangeTest_FullBufInsert_Test8TestBodyEv:
+function _ZN29ChangeTest_FullBufInsert_Test8TestBodyEv called 1 returned 100% blocks executed 52%
+        1:  128:TEST(ChangeTest, FullBufInsert)
+        -:  129:{
+       2*:  130:    EXPECT_ANY_THROW({
+        1:  130-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0
+        1:  130-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:  130-block  2
+branch  6 taken 1 (fallthrough)
+branch  7 taken 0
+        1:  130-block  3
+call    8 returned 1
+branch  9 taken 1 (fallthrough)
+branch 10 taken 0 (throw)
+        1:  130-block  4
+call   11 returned 1
+branch 12 taken 0 (fallthrough)
+branch 13 taken 1 (throw)
+    %%%%%:  130-block  5
+call   14 never executed
+        1:  130-block  6
+branch 15 taken 0 (fallthrough)
+branch 16 taken 1
+    %%%%%:  130-block  7
+    %%%%%:  130-block  8
+call   17 never executed
+branch 18 never executed (fallthrough)
+branch 19 never executed (throw)
+    %%%%%:  130-block  9
+call   20 never executed
+branch 21 never executed (fallthrough)
+branch 22 never executed (throw)
+    %%%%%:  130-block 10
+call   23 never executed
+branch 24 never executed (fallthrough)
+branch 25 never executed (throw)
+    %%%%%:  130-block 11
+call   26 never executed
+call   27 never executed
+    $$$$$:  130-block 12
+        1:  130-block 13
+        1:  130-block 14
+call   28 returned 1
+        1:  130-block 15
+        1:  130-block 16
+call   29 returned 1
+call   30 returned 1
+    $$$$$:  130-block 17
+call   31 never executed
+    $$$$$:  130-block 18
+    $$$$$:  130-block 19
+call   32 never executed
+        -:  131:                         CircularBuffer<int> a(5,1);
+        -:  132:                         a.insert(2);
+        -:  133:                     });
+        1:  134:}
+        1:  134-block  0
+------------------
+        -:  135:
+        4:  136:TEST(ChangeTest, InsertOut)
+        -:  137:{
+       2*:  138:    EXPECT_ANY_THROW({
+        -:  139:                         CircularBuffer<int> a(5);
+        -:  140:                         a.push_back(1);
+        -:  141:                         a.push_back(2);
+        -:  142:                         a.insert(4,3);
+        -:  143:                     });
+        1:  144:}
+------------------
+_ZN25ChangeTest_InsertOut_TestC2Ev:
+function _ZN25ChangeTest_InsertOut_TestC2Ev called 1 returned 100% blocks executed 100%
+        1:  136:TEST(ChangeTest, InsertOut)
+        1:  136-block  0
+call    0 returned 1
+------------------
+_ZN25ChangeTest_InsertOut_TestD0Ev:
+function _ZN25ChangeTest_InsertOut_TestD0Ev called 1 returned 100% blocks executed 100%
+        1:  136:TEST(ChangeTest, InsertOut)
+        1:  136-block  0
+call    0 returned 1
+call    1 returned 1
+------------------
+_ZN25ChangeTest_InsertOut_TestD2Ev:
+function _ZN25ChangeTest_InsertOut_TestD2Ev called 1 returned 100% blocks executed 100%
+        1:  136:TEST(ChangeTest, InsertOut)
+        1:  136-block  0
+call    0 returned 1
+------------------
+_ZN25ChangeTest_InsertOut_Test8TestBodyEv:
+function _ZN25ChangeTest_InsertOut_Test8TestBodyEv called 1 returned 100% blocks executed 53%
+        1:  136:TEST(ChangeTest, InsertOut)
+        -:  137:{
+       2*:  138:    EXPECT_ANY_THROW({
+        1:  138-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0
+        1:  138-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:  138-block  2
+branch  6 taken 1 (fallthrough)
+branch  7 taken 0
+        1:  138-block  3
+call    8 returned 1
+branch  9 taken 1 (fallthrough)
+branch 10 taken 0 (throw)
+        1:  138-block  4
+call   11 returned 1
+branch 12 taken 1 (fallthrough)
+branch 13 taken 0 (throw)
+        1:  138-block  5
+call   14 returned 1
+branch 15 taken 1 (fallthrough)
+branch 16 taken 0 (throw)
+        1:  138-block  6
+call   17 returned 1
+branch 18 taken 0 (fallthrough)
+branch 19 taken 1 (throw)
+    %%%%%:  138-block  7
+call   20 never executed
+        1:  138-block  8
+branch 21 taken 0 (fallthrough)
+branch 22 taken 1
+    %%%%%:  138-block  9
+    %%%%%:  138-block 10
+call   23 never executed
+branch 24 never executed (fallthrough)
+branch 25 never executed (throw)
+    %%%%%:  138-block 11
+call   26 never executed
+branch 27 never executed (fallthrough)
+branch 28 never executed (throw)
+    %%%%%:  138-block 12
+call   29 never executed
+branch 30 never executed (fallthrough)
+branch 31 never executed (throw)
+    %%%%%:  138-block 13
+call   32 never executed
+call   33 never executed
+    $$$$$:  138-block 14
+    $$$$$:  138-block 15
+        1:  138-block 16
+        1:  138-block 17
+call   34 returned 1
+        1:  138-block 18
+        1:  138-block 19
+call   35 returned 1
+call   36 returned 1
+    $$$$$:  138-block 20
+call   37 never executed
+    $$$$$:  138-block 21
+    $$$$$:  138-block 22
+call   38 never executed
+        -:  139:                         CircularBuffer<int> a(5);
+        -:  140:                         a.push_back(1);
+        -:  141:                         a.push_back(2);
+        -:  142:                         a.insert(4,3);
+        -:  143:                     });
+        1:  144:}
+        1:  144-block  0
+------------------
+        -:  145:
+        4:  146:TEST(ChangeTest, Insert)
+        -:  147:{
+        1:  148:    CircularBuffer<int> a(6);
+        1:  149:    a.push_back(1);
+        1:  150:    a.push_back(2);
+        1:  151:    a.push_back(3);
+        1:  152:    a.push_back(4);
+        1:  153:    a.insert(2, 5);
+       3*:  154:    EXPECT_TRUE(isBufEqVector(a,std::vector<int> {1,2,5,3,4}));
+        1:  155:}
+------------------
+_ZN22ChangeTest_Insert_TestC2Ev:
+function _ZN22ChangeTest_Insert_TestC2Ev called 1 returned 100% blocks executed 100%
+        1:  146:TEST(ChangeTest, Insert)
+        1:  146-block  0
+call    0 returned 1
+------------------
+_ZN22ChangeTest_Insert_TestD0Ev:
+function _ZN22ChangeTest_Insert_TestD0Ev called 1 returned 100% blocks executed 100%
+        1:  146:TEST(ChangeTest, Insert)
+        1:  146-block  0
+call    0 returned 1
+call    1 returned 1
+------------------
+_ZN22ChangeTest_Insert_TestD2Ev:
+function _ZN22ChangeTest_Insert_TestD2Ev called 1 returned 100% blocks executed 100%
+        1:  146:TEST(ChangeTest, Insert)
+        1:  146-block  0
+call    0 returned 1
+------------------
+_ZN22ChangeTest_Insert_Test8TestBodyEv:
+function _ZN22ChangeTest_Insert_Test8TestBodyEv called 1 returned 100% blocks executed 35%
+        1:  146:TEST(ChangeTest, Insert)
+        -:  147:{
+        1:  148:    CircularBuffer<int> a(6);
+        1:  148-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  149:    a.push_back(1);
+        1:  149-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+    $$$$$:  149-block  1
+        1:  150:    a.push_back(2);
+        1:  150-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+    $$$$$:  150-block  1
+        1:  151:    a.push_back(3);
+        1:  151-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+    $$$$$:  151-block  1
+        1:  152:    a.push_back(4);
+        1:  152-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+    $$$$$:  152-block  1
+        1:  153:    a.insert(2, 5);
+        1:  153-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+    $$$$$:  153-block  1
+       3*:  154:    EXPECT_TRUE(isBufEqVector(a,std::vector<int> {1,2,5,3,4}));
+        1:  154-block  0
+        1:  154-block  1
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  154-block  2
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:  154-block  3
+call    6 returned 1
+call    7 returned 1
+        1:  154-block  4
+call    8 returned 1
+branch  9 taken 0 (fallthrough)
+branch 10 taken 1
+    %%%%%:  154-block  5
+call   11 never executed
+branch 12 never executed (fallthrough)
+branch 13 never executed (throw)
+    %%%%%:  154-block  6
+call   14 never executed
+branch 15 never executed (fallthrough)
+branch 16 never executed (throw)
+    %%%%%:  154-block  7
+call   17 never executed
+call   18 never executed
+branch 19 never executed (fallthrough)
+branch 20 never executed (throw)
+    %%%%%:  154-block  8
+call   21 never executed
+branch 22 never executed (fallthrough)
+branch 23 never executed (throw)
+    %%%%%:  154-block  9
+call   24 never executed
+call   25 never executed
+call   26 never executed
+        1:  154-block 10
+call   27 returned 1
+    $$$$$:  154-block 11
+call   28 never executed
+    $$$$$:  154-block 12
+    $$$$$:  154-block 13
+    $$$$$:  154-block 14
+    $$$$$:  154-block 15
+    $$$$$:  154-block 16
+call   29 never executed
+    $$$$$:  154-block 17
+call   30 never executed
+    $$$$$:  154-block 18
+    $$$$$:  154-block 19
+    $$$$$:  154-block 20
+call   31 never executed
+    $$$$$:  154-block 21
+    $$$$$:  154-block 22
+call   32 never executed
+        1:  155:}
+call    0 returned 1
+    $$$$$:  155-block  0
+call    1 never executed
+------------------
+        -:  156:
+        4:  157:TEST(ChangeTest, Erase)
+        -:  158:{
+        1:  159:    CircularBuffer<int> a(10);
+        1:  160:    a.push_back(1);
+        1:  161:    a.push_back(2);
+        1:  162:    a.push_back(3);
+        1:  163:    a.push_back(4);
+        1:  164:    a.push_back(5);
+        1:  165:    a.push_back(6);
+        1:  166:    a.push_back(7);
+        1:  167:    a.push_back(8);
+        1:  168:    a.erase(2,5);
+       3*:  169:    EXPECT_TRUE(isBufEqVector(a,std::vector<int> {1,2,6,7,8}));
+        1:  170:}
+------------------
+_ZN21ChangeTest_Erase_TestC2Ev:
+function _ZN21ChangeTest_Erase_TestC2Ev called 1 returned 100% blocks executed 100%
+        1:  157:TEST(ChangeTest, Erase)
+        1:  157-block  0
+call    0 returned 1
+------------------
+_ZN21ChangeTest_Erase_TestD0Ev:
+function _ZN21ChangeTest_Erase_TestD0Ev called 1 returned 100% blocks executed 100%
+        1:  157:TEST(ChangeTest, Erase)
+        1:  157-block  0
+call    0 returned 1
+call    1 returned 1
+------------------
+_ZN21ChangeTest_Erase_TestD2Ev:
+function _ZN21ChangeTest_Erase_TestD2Ev called 1 returned 100% blocks executed 100%
+        1:  157:TEST(ChangeTest, Erase)
+        1:  157-block  0
+call    0 returned 1
+------------------
+_ZN21ChangeTest_Erase_Test8TestBodyEv:
+function _ZN21ChangeTest_Erase_Test8TestBodyEv called 1 returned 100% blocks executed 37%
+        1:  157:TEST(ChangeTest, Erase)
+        -:  158:{
+        1:  159:    CircularBuffer<int> a(10);
+        1:  159-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  160:    a.push_back(1);
+        1:  160-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+    $$$$$:  160-block  1
+        1:  161:    a.push_back(2);
+        1:  161-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+    $$$$$:  161-block  1
+        1:  162:    a.push_back(3);
+        1:  162-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+    $$$$$:  162-block  1
+        1:  163:    a.push_back(4);
+        1:  163-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+    $$$$$:  163-block  1
+        1:  164:    a.push_back(5);
+        1:  164-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+    $$$$$:  164-block  1
+        1:  165:    a.push_back(6);
+        1:  165-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+    $$$$$:  165-block  1
+        1:  166:    a.push_back(7);
+        1:  166-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+    $$$$$:  166-block  1
+        1:  167:    a.push_back(8);
+        1:  167-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+    $$$$$:  167-block  1
+        1:  168:    a.erase(2,5);
+        1:  168-block  0
+call    0 returned 1
+       3*:  169:    EXPECT_TRUE(isBufEqVector(a,std::vector<int> {1,2,6,7,8}));
+        1:  169-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  169-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:  169-block  2
+call    6 returned 1
+call    7 returned 1
+        1:  169-block  3
+call    8 returned 1
+branch  9 taken 0 (fallthrough)
+branch 10 taken 1
+    %%%%%:  169-block  4
+call   11 never executed
+branch 12 never executed (fallthrough)
+branch 13 never executed (throw)
+    %%%%%:  169-block  5
+call   14 never executed
+branch 15 never executed (fallthrough)
+branch 16 never executed (throw)
+    %%%%%:  169-block  6
+call   17 never executed
+call   18 never executed
+branch 19 never executed (fallthrough)
+branch 20 never executed (throw)
+    %%%%%:  169-block  7
+call   21 never executed
+branch 22 never executed (fallthrough)
+branch 23 never executed (throw)
+    %%%%%:  169-block  8
+call   24 never executed
+call   25 never executed
+call   26 never executed
+        1:  169-block  9
+call   27 returned 1
+    $$$$$:  169-block 10
+call   28 never executed
+    $$$$$:  169-block 11
+    $$$$$:  169-block 12
+    $$$$$:  169-block 13
+    $$$$$:  169-block 14
+    $$$$$:  169-block 15
+call   29 never executed
+    $$$$$:  169-block 16
+call   30 never executed
+    $$$$$:  169-block 17
+    $$$$$:  169-block 18
+    $$$$$:  169-block 19
+call   31 never executed
+    $$$$$:  169-block 20
+    $$$$$:  169-block 21
+call   32 never executed
+        1:  170:}
+call    0 returned 1
+    $$$$$:  170-block  0
+call    1 never executed
+------------------
+        -:  171:
+        4:  172:TEST(ChangeTest, TrivialClear)
+        -:  173:{
+       1*:  174:    EXPECT_NO_THROW({
+        -:  175:       CircularBuffer<int> a;
+        -:  176:       a.clear();
+        1:  177:    });
+        1:  178:}
+------------------
+_ZN28ChangeTest_TrivialClear_TestC2Ev:
+function _ZN28ChangeTest_TrivialClear_TestC2Ev called 1 returned 100% blocks executed 100%
+        1:  172:TEST(ChangeTest, TrivialClear)
+        1:  172-block  0
+call    0 returned 1
+------------------
+_ZN28ChangeTest_TrivialClear_TestD0Ev:
+function _ZN28ChangeTest_TrivialClear_TestD0Ev called 1 returned 100% blocks executed 100%
+        1:  172:TEST(ChangeTest, TrivialClear)
+        1:  172-block  0
+call    0 returned 1
+call    1 returned 1
+------------------
+_ZN28ChangeTest_TrivialClear_TestD2Ev:
+function _ZN28ChangeTest_TrivialClear_TestD2Ev called 1 returned 100% blocks executed 100%
+        1:  172:TEST(ChangeTest, TrivialClear)
+        1:  172-block  0
+call    0 returned 1
+------------------
+_ZN28ChangeTest_TrivialClear_Test8TestBodyEv:
+function _ZN28ChangeTest_TrivialClear_Test8TestBodyEv called 1 returned 100% blocks executed 22%
+        1:  172:TEST(ChangeTest, TrivialClear)
+        -:  173:{
+       1*:  174:    EXPECT_NO_THROW({
+        1:  174-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0
+        1:  174-block  1
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:  174-block  2
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0
+        1:  174-block  3
+call    9 returned 1
+call   10 returned 1
+call   11 returned 1
+    %%%%%:  174-block  4
+call   12 never executed
+branch 13 never executed (fallthrough)
+branch 14 never executed (throw)
+    %%%%%:  174-block  5
+call   15 never executed
+branch 16 never executed (fallthrough)
+branch 17 never executed (throw)
+    %%%%%:  174-block  6
+call   18 never executed
+call   19 never executed
+branch 20 never executed (fallthrough)
+branch 21 never executed (throw)
+    %%%%%:  174-block  7
+call   22 never executed
+branch 23 never executed (fallthrough)
+branch 24 never executed (throw)
+    %%%%%:  174-block  8
+call   25 never executed
+call   26 never executed
+call   27 never executed
+    $$$$$:  174-block  9
+branch 28 never executed
+branch 29 never executed
+    $$$$$:  174-block 10
+call   30 never executed
+call   31 never executed
+branch 32 never executed (fallthrough)
+branch 33 never executed (throw)
+    $$$$$:  174-block 11
+call   34 never executed
+branch 35 never executed (fallthrough)
+branch 36 never executed (throw)
+    $$$$$:  174-block 12
+call   37 never executed
+branch 38 never executed (fallthrough)
+branch 39 never executed (throw)
+    $$$$$:  174-block 13
+call   40 never executed
+call   41 never executed
+branch 42 never executed (fallthrough)
+branch 43 never executed (throw)
+    $$$$$:  174-block 14
+call   44 never executed
+call   45 never executed
+branch 46 never executed (fallthrough)
+branch 47 never executed (throw)
+    $$$$$:  174-block 15
+call   48 never executed
+branch 49 never executed (fallthrough)
+branch 50 never executed (throw)
+    $$$$$:  174-block 16
+    $$$$$:  174-block 17
+call   51 never executed
+    $$$$$:  174-block 18
+call   52 never executed
+call   53 never executed
+branch 54 never executed (fallthrough)
+branch 55 never executed (throw)
+    $$$$$:  174-block 19
+    $$$$$:  174-block 20
+call   56 never executed
+branch 57 never executed (fallthrough)
+branch 58 never executed (throw)
+    $$$$$:  174-block 21
+call   59 never executed
+    $$$$$:  174-block 22
+    $$$$$:  174-block 23
+call   60 never executed
+    $$$$$:  174-block 24
+call   61 never executed
+    $$$$$:  174-block 25
+call   62 never executed
+    $$$$$:  174-block 26
+call   63 never executed
+    $$$$$:  174-block 27
+    $$$$$:  174-block 28
+    $$$$$:  174-block 29
+call   64 never executed
+    $$$$$:  174-block 30
+        -:  175:       CircularBuffer<int> a;
+        -:  176:       a.clear();
+        1:  177:    });
+        1:  177-block  0
+call    0 returned 1
+    $$$$$:  177-block  1
+call    1 never executed
+        1:  178:}
+------------------
+        -:  179:
+        4:  180:TEST(ChangeTest, Clear)
+        -:  181:{
+       1*:  182:    EXPECT_NO_THROW({
+        -:  183:                        CircularBuffer<int> a(1000,123);
+        -:  184:                        a.clear();
+        1:  185:                    });
+        1:  186:}
+------------------
+_ZN21ChangeTest_Clear_TestC2Ev:
+function _ZN21ChangeTest_Clear_TestC2Ev called 1 returned 100% blocks executed 100%
+        1:  180:TEST(ChangeTest, Clear)
+        1:  180-block  0
+call    0 returned 1
+------------------
+_ZN21ChangeTest_Clear_TestD0Ev:
+function _ZN21ChangeTest_Clear_TestD0Ev called 1 returned 100% blocks executed 100%
+        1:  180:TEST(ChangeTest, Clear)
+        1:  180-block  0
+call    0 returned 1
+call    1 returned 1
+------------------
+_ZN21ChangeTest_Clear_TestD2Ev:
+function _ZN21ChangeTest_Clear_TestD2Ev called 1 returned 100% blocks executed 100%
+        1:  180:TEST(ChangeTest, Clear)
+        1:  180-block  0
+call    0 returned 1
+------------------
+_ZN21ChangeTest_Clear_Test8TestBodyEv:
+function _ZN21ChangeTest_Clear_Test8TestBodyEv called 1 returned 100% blocks executed 21%
+        1:  180:TEST(ChangeTest, Clear)
+        -:  181:{
+       1*:  182:    EXPECT_NO_THROW({
+        1:  182-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0
+        1:  182-block  1
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:  182-block  2
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0
+        1:  182-block  3
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:  182-block  4
+call   12 returned 1
+call   13 returned 1
+    %%%%%:  182-block  5
+call   14 never executed
+branch 15 never executed (fallthrough)
+branch 16 never executed (throw)
+    %%%%%:  182-block  6
+call   17 never executed
+branch 18 never executed (fallthrough)
+branch 19 never executed (throw)
+    %%%%%:  182-block  7
+call   20 never executed
+call   21 never executed
+branch 22 never executed (fallthrough)
+branch 23 never executed (throw)
+    %%%%%:  182-block  8
+call   24 never executed
+branch 25 never executed (fallthrough)
+branch 26 never executed (throw)
+    %%%%%:  182-block  9
+call   27 never executed
+call   28 never executed
+call   29 never executed
+    $$$$$:  182-block 10
+    $$$$$:  182-block 11
+branch 30 never executed
+branch 31 never executed
+    $$$$$:  182-block 12
+call   32 never executed
+call   33 never executed
+branch 34 never executed (fallthrough)
+branch 35 never executed (throw)
+    $$$$$:  182-block 13
+call   36 never executed
+branch 37 never executed (fallthrough)
+branch 38 never executed (throw)
+    $$$$$:  182-block 14
+call   39 never executed
+branch 40 never executed (fallthrough)
+branch 41 never executed (throw)
+    $$$$$:  182-block 15
+call   42 never executed
+call   43 never executed
+branch 44 never executed (fallthrough)
+branch 45 never executed (throw)
+    $$$$$:  182-block 16
+call   46 never executed
+call   47 never executed
+branch 48 never executed (fallthrough)
+branch 49 never executed (throw)
+    $$$$$:  182-block 17
+call   50 never executed
+branch 51 never executed (fallthrough)
+branch 52 never executed (throw)
+    $$$$$:  182-block 18
+    $$$$$:  182-block 19
+call   53 never executed
+    $$$$$:  182-block 20
+call   54 never executed
+call   55 never executed
+branch 56 never executed (fallthrough)
+branch 57 never executed (throw)
+    $$$$$:  182-block 21
+    $$$$$:  182-block 22
+call   58 never executed
+branch 59 never executed (fallthrough)
+branch 60 never executed (throw)
+    $$$$$:  182-block 23
+call   61 never executed
+    $$$$$:  182-block 24
+    $$$$$:  182-block 25
+call   62 never executed
+    $$$$$:  182-block 26
+call   63 never executed
+    $$$$$:  182-block 27
+call   64 never executed
+    $$$$$:  182-block 28
+call   65 never executed
+    $$$$$:  182-block 29
+    $$$$$:  182-block 30
+    $$$$$:  182-block 31
+call   66 never executed
+    $$$$$:  182-block 32
+        -:  183:                        CircularBuffer<int> a(1000,123);
+        -:  184:                        a.clear();
+        1:  185:                    });
+        1:  185-block  0
+call    0 returned 1
+    $$$$$:  185-block  1
+call    1 never executed
+        1:  186:}
+------------------

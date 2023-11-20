@@ -1,0 +1,15 @@
+# ninja log v5
+0	638	1700496366757747502	CMakeFiles/CircularBuffer.dir/main.cpp.o	3f3a626f02129f9f
+10961	11052	1700494354062057892	lib/libgtest.a	da80d9c0b9d51c4
+3145	5709	1700510346582053782	test/CMakeFiles/Tests.dir/EquityTest.cpp.o	6ba8d3c6f4126b27
+3	2991	1700510343866087323	test/CMakeFiles/Tests.dir/LinearizeTest.cpp.o	a985403506f73e58
+3	3128	1700510344002085640	test/CMakeFiles/Tests.dir/ConstructorTest.cpp.o	38e92177bdc11486
+0	36	1700494343057949218	libCircularBuffer_Lib.so	4608faa1ed3065cd
+2991	5654	1700510346530054424	test/CMakeFiles/Tests.dir/RotateTest.cpp.o	860ff39a34e23f56
+3128	6050	1700510346922049588	test/CMakeFiles/Tests.dir/ChangeTest.cpp.o	29445d82104782d9
+3	3144	1700510344018085442	test/CMakeFiles/Tests.dir/GetterTest.cpp.o	52272d6e90abdb06
+6050	6274	1700510347146046826	test/Tests	d1c307611a4195ff
+3072	4757	1700494347781995347	test/lib/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o	e8e9954e791c6998
+639	731	1700496366849745377	CircularBuffer	9a173e5dd5010c5b
+3046	10960	1700494353974057006	test/lib/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o	f61e2956f7270331
+11052	11060	1700494354086058133	lib/libgtest_main.a	eef794336ca3b314

@@ -1,0 +1,259 @@
+        -:    0:Source:/home/drmbx/CLionProjects/OOP/CircularBuffer/test/RotateTest.cpp
+        -:    0:Graph:/home/drmbx/CLionProjects/OOP/CircularBuffer/cmake-build-debug-coverage/test/CMakeFiles/Tests.dir/RotateTest.cpp.gcno
+        -:    0:Data:/home/drmbx/CLionProjects/OOP/CircularBuffer/cmake-build-debug-coverage/test/CMakeFiles/Tests.dir/RotateTest.cpp.gcda
+        -:    0:Runs:1
+        -:    1:#include "gtest/gtest.h"
+        -:    2:#include "CircularBuffer.h"
+        -:    3:#include "TestUtils.h"
+        -:    4:
+        4:    5:TEST(RotateTest, RotateEmpty)
+        -:    6:{
+       1*:    7:    EXPECT_NO_THROW({
+        -:    8:        CircularBuffer<int> a;
+        -:    9:        a.rotate(5);
+        1:   10:    });
+        1:   11:}
+------------------
+_ZN27RotateTest_RotateEmpty_TestC2Ev:
+function _ZN27RotateTest_RotateEmpty_TestC2Ev called 1 returned 100% blocks executed 100%
+        1:    5:TEST(RotateTest, RotateEmpty)
+        1:    5-block  0
+call    0 returned 1
+------------------
+_ZN27RotateTest_RotateEmpty_TestD0Ev:
+function _ZN27RotateTest_RotateEmpty_TestD0Ev called 1 returned 100% blocks executed 100%
+        1:    5:TEST(RotateTest, RotateEmpty)
+        1:    5-block  0
+call    0 returned 1
+call    1 returned 1
+------------------
+_ZN27RotateTest_RotateEmpty_TestD2Ev:
+function _ZN27RotateTest_RotateEmpty_TestD2Ev called 1 returned 100% blocks executed 100%
+        1:    5:TEST(RotateTest, RotateEmpty)
+        1:    5-block  0
+call    0 returned 1
+------------------
+_ZN27RotateTest_RotateEmpty_Test8TestBodyEv:
+function _ZN27RotateTest_RotateEmpty_Test8TestBodyEv called 1 returned 100% blocks executed 22%
+        1:    5:TEST(RotateTest, RotateEmpty)
+        -:    6:{
+       1*:    7:    EXPECT_NO_THROW({
+        1:    7-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0
+        1:    7-block  1
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:    7-block  2
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0
+        1:    7-block  3
+call    9 returned 1
+call   10 returned 1
+call   11 returned 1
+    %%%%%:    7-block  4
+call   12 never executed
+branch 13 never executed (fallthrough)
+branch 14 never executed (throw)
+    %%%%%:    7-block  5
+call   15 never executed
+branch 16 never executed (fallthrough)
+branch 17 never executed (throw)
+    %%%%%:    7-block  6
+call   18 never executed
+call   19 never executed
+branch 20 never executed (fallthrough)
+branch 21 never executed (throw)
+    %%%%%:    7-block  7
+call   22 never executed
+branch 23 never executed (fallthrough)
+branch 24 never executed (throw)
+    %%%%%:    7-block  8
+call   25 never executed
+call   26 never executed
+call   27 never executed
+    $$$$$:    7-block  9
+branch 28 never executed
+branch 29 never executed
+    $$$$$:    7-block 10
+call   30 never executed
+call   31 never executed
+branch 32 never executed (fallthrough)
+branch 33 never executed (throw)
+    $$$$$:    7-block 11
+call   34 never executed
+branch 35 never executed (fallthrough)
+branch 36 never executed (throw)
+    $$$$$:    7-block 12
+call   37 never executed
+branch 38 never executed (fallthrough)
+branch 39 never executed (throw)
+    $$$$$:    7-block 13
+call   40 never executed
+call   41 never executed
+branch 42 never executed (fallthrough)
+branch 43 never executed (throw)
+    $$$$$:    7-block 14
+call   44 never executed
+call   45 never executed
+branch 46 never executed (fallthrough)
+branch 47 never executed (throw)
+    $$$$$:    7-block 15
+call   48 never executed
+branch 49 never executed (fallthrough)
+branch 50 never executed (throw)
+    $$$$$:    7-block 16
+    $$$$$:    7-block 17
+call   51 never executed
+    $$$$$:    7-block 18
+call   52 never executed
+call   53 never executed
+branch 54 never executed (fallthrough)
+branch 55 never executed (throw)
+    $$$$$:    7-block 19
+    $$$$$:    7-block 20
+call   56 never executed
+branch 57 never executed (fallthrough)
+branch 58 never executed (throw)
+    $$$$$:    7-block 21
+call   59 never executed
+    $$$$$:    7-block 22
+    $$$$$:    7-block 23
+call   60 never executed
+    $$$$$:    7-block 24
+call   61 never executed
+    $$$$$:    7-block 25
+call   62 never executed
+    $$$$$:    7-block 26
+call   63 never executed
+    $$$$$:    7-block 27
+    $$$$$:    7-block 28
+    $$$$$:    7-block 29
+call   64 never executed
+    $$$$$:    7-block 30
+        -:    8:        CircularBuffer<int> a;
+        -:    9:        a.rotate(5);
+        1:   10:    });
+        1:   10-block  0
+call    0 returned 1
+    $$$$$:   10-block  1
+call    1 never executed
+        1:   11:}
+------------------
+        -:   12:
+        4:   13:TEST(RotateTest, RotateFull)
+        -:   14:{
+        1:   15:    CircularBuffer<int> a(5);
+        6:   16:    for (int i = 0; i < 5; i++)
+        5:   17:        a.push_back(i+1);
+        1:   18:    a.rotate(2);
+       3*:   19:    EXPECT_TRUE(isBufEqVector(a,std::vector<int>{3,4,5,1,2}));
+        1:   20:}
+------------------
+_ZN26RotateTest_RotateFull_TestC2Ev:
+function _ZN26RotateTest_RotateFull_TestC2Ev called 1 returned 100% blocks executed 100%
+        1:   13:TEST(RotateTest, RotateFull)
+        1:   13-block  0
+call    0 returned 1
+------------------
+_ZN26RotateTest_RotateFull_TestD0Ev:
+function _ZN26RotateTest_RotateFull_TestD0Ev called 1 returned 100% blocks executed 100%
+        1:   13:TEST(RotateTest, RotateFull)
+        1:   13-block  0
+call    0 returned 1
+call    1 returned 1
+------------------
+_ZN26RotateTest_RotateFull_TestD2Ev:
+function _ZN26RotateTest_RotateFull_TestD2Ev called 1 returned 100% blocks executed 100%
+        1:   13:TEST(RotateTest, RotateFull)
+        1:   13-block  0
+call    0 returned 1
+------------------
+_ZN26RotateTest_RotateFull_Test8TestBodyEv:
+function _ZN26RotateTest_RotateFull_Test8TestBodyEv called 1 returned 100% blocks executed 37%
+        1:   13:TEST(RotateTest, RotateFull)
+        -:   14:{
+        1:   15:    CircularBuffer<int> a(5);
+        1:   15-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        6:   16:    for (int i = 0; i < 5; i++)
+        1:   16-block  0
+        6:   16-block  1
+branch  0 taken 5
+branch  1 taken 1 (fallthrough)
+        5:   17:        a.push_back(i+1);
+        5:   17-block  0
+call    0 returned 5
+branch  1 taken 5 (fallthrough)
+branch  2 taken 0 (throw)
+        5:   17-block  1
+    $$$$$:   17-block  2
+        1:   18:    a.rotate(2);
+        1:   18-block  0
+call    0 returned 1
+       3*:   19:    EXPECT_TRUE(isBufEqVector(a,std::vector<int>{3,4,5,1,2}));
+        1:   19-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   19-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   19-block  2
+call    6 returned 1
+call    7 returned 1
+        1:   19-block  3
+call    8 returned 1
+branch  9 taken 0 (fallthrough)
+branch 10 taken 1
+    %%%%%:   19-block  4
+call   11 never executed
+branch 12 never executed (fallthrough)
+branch 13 never executed (throw)
+    %%%%%:   19-block  5
+call   14 never executed
+branch 15 never executed (fallthrough)
+branch 16 never executed (throw)
+    %%%%%:   19-block  6
+call   17 never executed
+call   18 never executed
+branch 19 never executed (fallthrough)
+branch 20 never executed (throw)
+    %%%%%:   19-block  7
+call   21 never executed
+branch 22 never executed (fallthrough)
+branch 23 never executed (throw)
+    %%%%%:   19-block  8
+call   24 never executed
+call   25 never executed
+call   26 never executed
+        1:   19-block  9
+call   27 returned 1
+    $$$$$:   19-block 10
+call   28 never executed
+    $$$$$:   19-block 11
+    $$$$$:   19-block 12
+    $$$$$:   19-block 13
+    $$$$$:   19-block 14
+    $$$$$:   19-block 15
+call   29 never executed
+    $$$$$:   19-block 16
+call   30 never executed
+    $$$$$:   19-block 17
+    $$$$$:   19-block 18
+    $$$$$:   19-block 19
+call   31 never executed
+    $$$$$:   19-block 20
+    $$$$$:   19-block 21
+call   32 never executed
+        1:   20:}
+call    0 returned 1
+    $$$$$:   20-block  0
+call    1 never executed
+------------------

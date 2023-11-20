@@ -1,0 +1,41 @@
+        -:    0:Source:/home/drmbx/CLionProjects/OOP/CircularBuffer/test/TestUtils.h
+        -:    0:Graph:/home/drmbx/CLionProjects/OOP/CircularBuffer/cmake-build-debug-coverage/test/CMakeFiles/Tests.dir/ConstructorTest.cpp.gcno
+        -:    0:Data:/home/drmbx/CLionProjects/OOP/CircularBuffer/cmake-build-debug-coverage/test/CMakeFiles/Tests.dir/ConstructorTest.cpp.gcda
+        -:    0:Runs:1
+        -:    1:#include <vector>
+        -:    2:#include "CircularBuffer.h"
+        -:    3:
+        -:    4:template<typename T>
+function _Z13isBufEqVectorIiEbRK14CircularBufferIT_ERKSt6vectorIS1_SaIS1_EE called 8 returned 100% blocks executed 86%
+        8:    5:bool isBufEqVector(const CircularBuffer<T> &Buf, const std::vector<T> &Vec)
+        -:    6:{
+        8:    7:    if (Buf.size() != Vec.size())
+        8:    7-block  0
+call    0 returned 8
+call    1 returned 8
+branch  2 taken 0 (fallthrough)
+branch  3 taken 8
+    #####:    8:        return false;
+    %%%%%:    8-block  0
+        -:    9:
+     1037:   10:    for (int i = 0; i < Buf.size(); i++)
+        8:   10-block  0
+     1029:   10-block  1
+     1037:   10-block  2
+call    0 returned 1037
+branch  1 taken 1029
+branch  2 taken 8 (fallthrough)
+        -:   11:    {
+     1029:   12:        if (Buf[i] != Vec[i])
+     1029:   12-block  0
+call    0 returned 1029
+call    1 returned 1029
+branch  2 taken 0 (fallthrough)
+branch  3 taken 1029
+    #####:   13:            return false;
+    %%%%%:   13-block  0
+        -:   14:    }
+        8:   15:    return true;
+        8:   15-block  0
+        -:   16:}
+        -:   17:

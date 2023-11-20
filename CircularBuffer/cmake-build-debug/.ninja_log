@@ -1,0 +1,15 @@
+# ninja log v5
+1	559	1700492653271928026	CMakeFiles/CircularBuffer.dir/main.cpp.o	819e25b5611f0e42
+8061	8120	1700490937479101771	lib/libgtest.a	da80d9c0b9d51c4
+3	2276	1700494223062155901	test/CMakeFiles/Tests.dir/LinearizeTest.cpp.o	6fee14a1f6b5acad
+0	29	1700511702735785454	build.ninja	e2f547c9215dbe07
+11	3009	1700489339343491486	CMakeFiles/CircularBuffer_Lib.dir/main.cpp.o	dd64f6308c1a8fd8
+3	2484	1700494223270160086	test/CMakeFiles/Tests.dir/ConstructorTest.cpp.o	6ba8e7364d601aaf
+0	22	1700490914907562817	libCircularBuffer_Lib.so	a561eacbaa52f8af
+3	2263	1700494223050155658	test/CMakeFiles/Tests.dir/GetterTest.cpp.o	a586ec0b6b04cf7f
+2484	2684	1700494223466164033	test/Tests	2476e5817ebc56dc
+559	645	1700492653355926887	CircularBuffer	8dc8695fc6665f22
+2163	3496	1700490932859195646	test/lib/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o	3d799da8314d3c25
+0	2	0	clean	690b186f5f2dc854
+2080	8061	1700490937419102990	test/lib/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o	cc02fc4241e113db
+8121	8126	1700490937491101528	lib/libgtest_main.a	eef794336ca3b314

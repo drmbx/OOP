@@ -1,0 +1,568 @@
+        -:    0:Source:/home/drmbx/CLionProjects/OOP/CircularBuffer/test/LinearizeTest.cpp
+        -:    0:Graph:/home/drmbx/CLionProjects/OOP/CircularBuffer/cmake-build-debug-coverage/test/CMakeFiles/Tests.dir/LinearizeTest.cpp.gcno
+        -:    0:Data:/home/drmbx/CLionProjects/OOP/CircularBuffer/cmake-build-debug-coverage/test/CMakeFiles/Tests.dir/LinearizeTest.cpp.gcda
+        -:    0:Runs:1
+        -:    1:#include "gtest/gtest.h"
+        -:    2:#include "CircularBuffer.h"
+        -:    3:#include "TestUtils.h"
+        -:    4:
+        4:    5:TEST(LinearizeTest, TrivialLinearize) {
+        1:    6:    CircularBuffer<int> buf(1000, 123);
+        1:    7:    buf[0] = 500;
+       1*:    8:    EXPECT_EQ(*buf.linearize(), 500);
+        1:    9:}
+------------------
+_ZN35LinearizeTest_TrivialLinearize_TestC2Ev:
+function _ZN35LinearizeTest_TrivialLinearize_TestC2Ev called 1 returned 100% blocks executed 100%
+        1:    5:TEST(LinearizeTest, TrivialLinearize) {
+        1:    5-block  0
+call    0 returned 1
+------------------
+_ZN35LinearizeTest_TrivialLinearize_TestD0Ev:
+function _ZN35LinearizeTest_TrivialLinearize_TestD0Ev called 1 returned 100% blocks executed 100%
+        1:    5:TEST(LinearizeTest, TrivialLinearize) {
+        1:    5-block  0
+call    0 returned 1
+call    1 returned 1
+------------------
+_ZN35LinearizeTest_TrivialLinearize_TestD2Ev:
+function _ZN35LinearizeTest_TrivialLinearize_TestD2Ev called 1 returned 100% blocks executed 100%
+        1:    5:TEST(LinearizeTest, TrivialLinearize) {
+        1:    5-block  0
+call    0 returned 1
+------------------
+_ZN35LinearizeTest_TrivialLinearize_Test8TestBodyEv:
+function _ZN35LinearizeTest_TrivialLinearize_Test8TestBodyEv called 1 returned 100% blocks executed 33%
+        1:    5:TEST(LinearizeTest, TrivialLinearize) {
+        1:    6:    CircularBuffer<int> buf(1000, 123);
+        1:    6-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+    $$$$$:    6-block  1
+        1:    7:    buf[0] = 500;
+        1:    7-block  0
+call    0 returned 1
+       1*:    8:    EXPECT_EQ(*buf.linearize(), 500);
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:    8-block  0
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:    8-block  1
+call    6 returned 1
+branch  7 taken 0 (fallthrough)
+branch  8 taken 1
+    %%%%%:    8-block  2
+call    9 never executed
+branch 10 never executed (fallthrough)
+branch 11 never executed (throw)
+    %%%%%:    8-block  3
+call   12 never executed
+call   13 never executed
+branch 14 never executed (fallthrough)
+branch 15 never executed (throw)
+    %%%%%:    8-block  4
+call   16 never executed
+branch 17 never executed (fallthrough)
+branch 18 never executed (throw)
+    %%%%%:    8-block  5
+call   19 never executed
+call   20 never executed
+        1:    8-block  6
+call   21 returned 1
+    $$$$$:    8-block  7
+    $$$$$:    8-block  8
+call   22 never executed
+    $$$$$:    8-block  9
+    $$$$$:    8-block 10
+call   23 never executed
+    $$$$$:    8-block 11
+    $$$$$:    8-block 12
+call   24 never executed
+        1:    9:}
+call    0 returned 1
+    $$$$$:    9-block  0
+call    1 never executed
+------------------
+        -:   10:
+        4:   11:TEST(LinearizeTest, OrderedLinearize) {
+        1:   12:    CircularBuffer<int> buf(5);
+        1:   13:    buf.push_back(1);
+        1:   14:    buf.push_back(2);
+        1:   15:    buf.push_back(3);
+        1:   16:    buf.push_back(4);
+        1:   17:    buf.pop_front();
+       3*:   18:    EXPECT_TRUE(isBufEqVector(buf, std::vector<int>{2,3,4}));
+       1*:   19:    EXPECT_EQ(buf.linearize()[0], 2);
+        1:   20:}
+------------------
+_ZN35LinearizeTest_OrderedLinearize_TestC2Ev:
+function _ZN35LinearizeTest_OrderedLinearize_TestC2Ev called 1 returned 100% blocks executed 100%
+        1:   11:TEST(LinearizeTest, OrderedLinearize) {
+        1:   11-block  0
+call    0 returned 1
+------------------
+_ZN35LinearizeTest_OrderedLinearize_TestD0Ev:
+function _ZN35LinearizeTest_OrderedLinearize_TestD0Ev called 1 returned 100% blocks executed 100%
+        1:   11:TEST(LinearizeTest, OrderedLinearize) {
+        1:   11-block  0
+call    0 returned 1
+call    1 returned 1
+------------------
+_ZN35LinearizeTest_OrderedLinearize_TestD2Ev:
+function _ZN35LinearizeTest_OrderedLinearize_TestD2Ev called 1 returned 100% blocks executed 100%
+        1:   11:TEST(LinearizeTest, OrderedLinearize) {
+        1:   11-block  0
+call    0 returned 1
+------------------
+_ZN35LinearizeTest_OrderedLinearize_Test8TestBodyEv:
+function _ZN35LinearizeTest_OrderedLinearize_Test8TestBodyEv called 1 returned 100% blocks executed 32%
+        1:   11:TEST(LinearizeTest, OrderedLinearize) {
+        1:   12:    CircularBuffer<int> buf(5);
+        1:   12-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   13:    buf.push_back(1);
+        1:   13-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+    $$$$$:   13-block  1
+        1:   14:    buf.push_back(2);
+        1:   14-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+    $$$$$:   14-block  1
+        1:   15:    buf.push_back(3);
+        1:   15-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+    $$$$$:   15-block  1
+        1:   16:    buf.push_back(4);
+        1:   16-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+    $$$$$:   16-block  1
+        1:   17:    buf.pop_front();
+        1:   17-block  0
+call    0 returned 1
+       3*:   18:    EXPECT_TRUE(isBufEqVector(buf, std::vector<int>{2,3,4}));
+        1:   18-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   18-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   18-block  2
+call    6 returned 1
+call    7 returned 1
+        1:   18-block  3
+call    8 returned 1
+branch  9 taken 0 (fallthrough)
+branch 10 taken 1
+    %%%%%:   18-block  4
+call   11 never executed
+branch 12 never executed (fallthrough)
+branch 13 never executed (throw)
+    %%%%%:   18-block  5
+call   14 never executed
+branch 15 never executed (fallthrough)
+branch 16 never executed (throw)
+    %%%%%:   18-block  6
+call   17 never executed
+call   18 never executed
+branch 19 never executed (fallthrough)
+branch 20 never executed (throw)
+    %%%%%:   18-block  7
+call   21 never executed
+branch 22 never executed (fallthrough)
+branch 23 never executed (throw)
+    %%%%%:   18-block  8
+call   24 never executed
+call   25 never executed
+call   26 never executed
+        1:   18-block  9
+call   27 returned 1
+    $$$$$:   18-block 10
+call   28 never executed
+    $$$$$:   18-block 11
+    $$$$$:   18-block 12
+    $$$$$:   18-block 13
+    $$$$$:   18-block 14
+    $$$$$:   18-block 15
+call   29 never executed
+    $$$$$:   18-block 16
+call   30 never executed
+    $$$$$:   18-block 17
+    $$$$$:   18-block 18
+    $$$$$:   18-block 19
+call   31 never executed
+    $$$$$:   18-block 20
+    $$$$$:   18-block 21
+call   32 never executed
+       1*:   19:    EXPECT_EQ(buf.linearize()[0], 2);
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   19-block  0
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   19-block  1
+call    6 returned 1
+branch  7 taken 0 (fallthrough)
+branch  8 taken 1
+    %%%%%:   19-block  2
+call    9 never executed
+branch 10 never executed (fallthrough)
+branch 11 never executed (throw)
+    %%%%%:   19-block  3
+call   12 never executed
+call   13 never executed
+branch 14 never executed (fallthrough)
+branch 15 never executed (throw)
+    %%%%%:   19-block  4
+call   16 never executed
+branch 17 never executed (fallthrough)
+branch 18 never executed (throw)
+    %%%%%:   19-block  5
+call   19 never executed
+call   20 never executed
+        1:   19-block  6
+call   21 returned 1
+    $$$$$:   19-block  7
+    $$$$$:   19-block  8
+call   22 never executed
+    $$$$$:   19-block  9
+    $$$$$:   19-block 10
+call   23 never executed
+    $$$$$:   19-block 11
+    $$$$$:   19-block 12
+call   24 never executed
+        1:   20:}
+call    0 returned 1
+    $$$$$:   20-block  0
+call    1 never executed
+------------------
+        -:   21:
+        4:   22:TEST(LinearizeTest, NotOrderedLinearize) {
+        1:   23:    CircularBuffer<int> buf(5, 123);
+        1:   24:    buf.push_back(1);
+        1:   25:    buf.push_back(2);
+        1:   26:    buf.push_back(3);
+        1:   27:    buf.push_front(4);
+       3*:   28:    EXPECT_TRUE(isBufEqVector(buf, std::vector<int>{4, 123, 123, 1, 2}));
+       1*:   29:    EXPECT_EQ(buf.linearize()[0], 4);
+        1:   30:}
+------------------
+_ZN38LinearizeTest_NotOrderedLinearize_TestC2Ev:
+function _ZN38LinearizeTest_NotOrderedLinearize_TestC2Ev called 1 returned 100% blocks executed 100%
+        1:   22:TEST(LinearizeTest, NotOrderedLinearize) {
+        1:   22-block  0
+call    0 returned 1
+------------------
+_ZN38LinearizeTest_NotOrderedLinearize_TestD0Ev:
+function _ZN38LinearizeTest_NotOrderedLinearize_TestD0Ev called 1 returned 100% blocks executed 100%
+        1:   22:TEST(LinearizeTest, NotOrderedLinearize) {
+        1:   22-block  0
+call    0 returned 1
+call    1 returned 1
+------------------
+_ZN38LinearizeTest_NotOrderedLinearize_TestD2Ev:
+function _ZN38LinearizeTest_NotOrderedLinearize_TestD2Ev called 1 returned 100% blocks executed 100%
+        1:   22:TEST(LinearizeTest, NotOrderedLinearize) {
+        1:   22-block  0
+call    0 returned 1
+------------------
+_ZN38LinearizeTest_NotOrderedLinearize_Test8TestBodyEv:
+function _ZN38LinearizeTest_NotOrderedLinearize_Test8TestBodyEv called 1 returned 100% blocks executed 30%
+        1:   22:TEST(LinearizeTest, NotOrderedLinearize) {
+        1:   23:    CircularBuffer<int> buf(5, 123);
+        1:   23-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+    $$$$$:   23-block  1
+        1:   24:    buf.push_back(1);
+        1:   24-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+    $$$$$:   24-block  1
+        1:   25:    buf.push_back(2);
+        1:   25-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+    $$$$$:   25-block  1
+        1:   26:    buf.push_back(3);
+        1:   26-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+    $$$$$:   26-block  1
+        1:   27:    buf.push_front(4);
+        1:   27-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+    $$$$$:   27-block  1
+       3*:   28:    EXPECT_TRUE(isBufEqVector(buf, std::vector<int>{4, 123, 123, 1, 2}));
+        1:   28-block  0
+        1:   28-block  1
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   28-block  2
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   28-block  3
+call    6 returned 1
+call    7 returned 1
+        1:   28-block  4
+call    8 returned 1
+branch  9 taken 0 (fallthrough)
+branch 10 taken 1
+    %%%%%:   28-block  5
+call   11 never executed
+branch 12 never executed (fallthrough)
+branch 13 never executed (throw)
+    %%%%%:   28-block  6
+call   14 never executed
+branch 15 never executed (fallthrough)
+branch 16 never executed (throw)
+    %%%%%:   28-block  7
+call   17 never executed
+call   18 never executed
+branch 19 never executed (fallthrough)
+branch 20 never executed (throw)
+    %%%%%:   28-block  8
+call   21 never executed
+branch 22 never executed (fallthrough)
+branch 23 never executed (throw)
+    %%%%%:   28-block  9
+call   24 never executed
+call   25 never executed
+call   26 never executed
+        1:   28-block 10
+call   27 returned 1
+    $$$$$:   28-block 11
+call   28 never executed
+    $$$$$:   28-block 12
+    $$$$$:   28-block 13
+    $$$$$:   28-block 14
+    $$$$$:   28-block 15
+    $$$$$:   28-block 16
+call   29 never executed
+    $$$$$:   28-block 17
+call   30 never executed
+    $$$$$:   28-block 18
+    $$$$$:   28-block 19
+    $$$$$:   28-block 20
+call   31 never executed
+    $$$$$:   28-block 21
+    $$$$$:   28-block 22
+call   32 never executed
+       1*:   29:    EXPECT_EQ(buf.linearize()[0], 4);
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   29-block  0
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   29-block  1
+call    6 returned 1
+branch  7 taken 0 (fallthrough)
+branch  8 taken 1
+    %%%%%:   29-block  2
+call    9 never executed
+branch 10 never executed (fallthrough)
+branch 11 never executed (throw)
+    %%%%%:   29-block  3
+call   12 never executed
+call   13 never executed
+branch 14 never executed (fallthrough)
+branch 15 never executed (throw)
+    %%%%%:   29-block  4
+call   16 never executed
+branch 17 never executed (fallthrough)
+branch 18 never executed (throw)
+    %%%%%:   29-block  5
+call   19 never executed
+call   20 never executed
+        1:   29-block  6
+call   21 returned 1
+    $$$$$:   29-block  7
+    $$$$$:   29-block  8
+call   22 never executed
+    $$$$$:   29-block  9
+    $$$$$:   29-block 10
+call   23 never executed
+    $$$$$:   29-block 11
+    $$$$$:   29-block 12
+call   24 never executed
+        1:   30:}
+call    0 returned 1
+    $$$$$:   30-block  0
+call    1 never executed
+------------------
+        -:   31:
+        4:   32:TEST(LinearizeTest, IsLinearized){
+        1:   33:    CircularBuffer<int> buf(3);
+        1:   34:    buf.push_back(1);
+        1:   35:    buf.push_back(2);
+        1:   36:    buf.push_back(3);
+       1*:   37:    EXPECT_TRUE(buf.is_linearized());
+        1:   38:    buf.push_back(4);
+       1*:   39:    EXPECT_FALSE(buf.is_linearized());
+        1:   40:}
+------------------
+_ZN31LinearizeTest_IsLinearized_TestC2Ev:
+function _ZN31LinearizeTest_IsLinearized_TestC2Ev called 1 returned 100% blocks executed 100%
+        1:   32:TEST(LinearizeTest, IsLinearized){
+        1:   32-block  0
+call    0 returned 1
+------------------
+_ZN31LinearizeTest_IsLinearized_TestD0Ev:
+function _ZN31LinearizeTest_IsLinearized_TestD0Ev called 1 returned 100% blocks executed 100%
+        1:   32:TEST(LinearizeTest, IsLinearized){
+        1:   32-block  0
+call    0 returned 1
+call    1 returned 1
+------------------
+_ZN31LinearizeTest_IsLinearized_TestD2Ev:
+function _ZN31LinearizeTest_IsLinearized_TestD2Ev called 1 returned 100% blocks executed 100%
+        1:   32:TEST(LinearizeTest, IsLinearized){
+        1:   32-block  0
+call    0 returned 1
+------------------
+_ZN31LinearizeTest_IsLinearized_Test8TestBodyEv:
+function _ZN31LinearizeTest_IsLinearized_Test8TestBodyEv called 1 returned 100% blocks executed 27%
+        1:   32:TEST(LinearizeTest, IsLinearized){
+        1:   33:    CircularBuffer<int> buf(3);
+        1:   33-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   34:    buf.push_back(1);
+        1:   34-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+    $$$$$:   34-block  1
+        1:   35:    buf.push_back(2);
+        1:   35-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+    $$$$$:   35-block  1
+        1:   36:    buf.push_back(3);
+        1:   36-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+    $$$$$:   36-block  1
+       1*:   37:    EXPECT_TRUE(buf.is_linearized());
+        1:   37-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+branch  3 taken 0 (fallthrough)
+branch  4 taken 1
+    %%%%%:   37-block  1
+call    5 never executed
+branch  6 never executed (fallthrough)
+branch  7 never executed (throw)
+    %%%%%:   37-block  2
+call    8 never executed
+branch  9 never executed (fallthrough)
+branch 10 never executed (throw)
+    %%%%%:   37-block  3
+call   11 never executed
+call   12 never executed
+branch 13 never executed (fallthrough)
+branch 14 never executed (throw)
+    %%%%%:   37-block  4
+call   15 never executed
+branch 16 never executed (fallthrough)
+branch 17 never executed (throw)
+    %%%%%:   37-block  5
+call   18 never executed
+call   19 never executed
+call   20 never executed
+        1:   37-block  6
+call   21 returned 1
+    $$$$$:   37-block  7
+call   22 never executed
+    $$$$$:   37-block  8
+call   23 never executed
+    $$$$$:   37-block  9
+    $$$$$:   37-block 10
+    $$$$$:   37-block 11
+call   24 never executed
+    $$$$$:   37-block 12
+    $$$$$:   37-block 13
+call   25 never executed
+        1:   38:    buf.push_back(4);
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+    $$$$$:   38-block  0
+       1*:   39:    EXPECT_FALSE(buf.is_linearized());
+        1:   39-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+branch  3 taken 0 (fallthrough)
+branch  4 taken 1
+    %%%%%:   39-block  1
+call    5 never executed
+branch  6 never executed (fallthrough)
+branch  7 never executed (throw)
+    %%%%%:   39-block  2
+call    8 never executed
+branch  9 never executed (fallthrough)
+branch 10 never executed (throw)
+    %%%%%:   39-block  3
+call   11 never executed
+call   12 never executed
+branch 13 never executed (fallthrough)
+branch 14 never executed (throw)
+    %%%%%:   39-block  4
+call   15 never executed
+branch 16 never executed (fallthrough)
+branch 17 never executed (throw)
+    %%%%%:   39-block  5
+call   18 never executed
+call   19 never executed
+call   20 never executed
+        1:   39-block  6
+call   21 returned 1
+    $$$$$:   39-block  7
+call   22 never executed
+    $$$$$:   39-block  8
+call   23 never executed
+    $$$$$:   39-block  9
+    $$$$$:   39-block 10
+    $$$$$:   39-block 11
+call   24 never executed
+    $$$$$:   39-block 12
+    $$$$$:   39-block 13
+call   25 never executed
+        1:   40:}
+call    0 returned 1
+    $$$$$:   40-block  0
+call    1 never executed
+------------------
+        -:   41:

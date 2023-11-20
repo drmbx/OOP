@@ -1,0 +1,648 @@
+        -:    0:Source:/home/drmbx/CLionProjects/OOP/CircularBuffer/CircularBuffer.h
+        -:    0:Graph:/home/drmbx/CLionProjects/OOP/CircularBuffer/cmake-build-debug-coverage/test/CMakeFiles/Tests.dir/ChangeTest.cpp.gcno
+        -:    0:Data:/home/drmbx/CLionProjects/OOP/CircularBuffer/cmake-build-debug-coverage/test/CMakeFiles/Tests.dir/ChangeTest.cpp.gcda
+        -:    0:Runs:1
+        -:    1:#pragma once
+        -:    2:
+        -:    3:#include <vector>
+        -:    4:#include <iostream>
+        -:    5:#include <stdexcept>
+        -:    6:#include <cstring>
+        -:    7:
+        -:    8:template<typename T>
+        -:    9:class CircularBuffer {
+        -:   10:    T *buffer_;
+        -:   11:    int begin_;
+        -:   12:    int end_;
+        -:   13:    int size_;
+        -:   14:    int capacity_;
+        -:   15:public:
+function _ZN14CircularBufferIiEC2Ev called 0 returned 0% blocks executed 0%
+    #####:   16:    CircularBuffer()
+    #####:   17:            : buffer_{},
+    #####:   18:              begin_{},
+    #####:   19:              end_{},
+    #####:   20:              size_{},
+    #####:   21:              capacity_{} {}
+        -:   22:
+function _ZN14CircularBufferIiED2Ev called 0 returned 0% blocks executed 0%
+    #####:   23:    ~CircularBuffer() {
+    #####:   24:        if (capacity_ == 0)
+    %%%%%:   24-block  0
+branch  0 never executed (fallthrough)
+branch  1 never executed
+    #####:   25:            return;
+        -:   26:
+    #####:   27:        delete[](buffer_);
+    %%%%%:   27-block  0
+branch  0 never executed (fallthrough)
+branch  1 never executed
+    %%%%%:   27-block  1
+call    2 never executed
+    #####:   28:    }
+    %%%%%:   28-block  0
+    %%%%%:   28-block  1
+        -:   29:
+function _ZN14CircularBufferIiEC2ERKS0_ called 0 returned 0% blocks executed 0%
+    #####:   30:    CircularBuffer(const CircularBuffer &cb)
+    #####:   31:            : buffer_{new T[cb.capacity_]},
+    %%%%%:   31-block  0
+branch  0 never executed (fallthrough)
+branch  1 never executed
+    %%%%%:   31-block  1
+    %%%%%:   31-block  2
+call    2 never executed
+    %%%%%:   31-block  3
+call    3 never executed
+    #####:   32:              begin_{},
+    #####:   33:              end_{},
+    #####:   34:              size_{},
+    #####:   35:              capacity_{cb.capacity_} {
+    #####:   36:        for (int i = 0; i < cb.size_; i++)
+    %%%%%:   36-block  0
+branch  0 never executed
+branch  1 never executed (fallthrough)
+    #####:   37:            push_back(cb[i]);
+    %%%%%:   37-block  0
+call    0 never executed
+call    1 never executed
+    #####:   38:    };
+        -:   39:
+        -:   40:    //Конструирует буфер заданной ёмкости.
+function _ZN14CircularBufferIiEC2Ei called 0 returned 0% blocks executed 0%
+    #####:   41:    explicit CircularBuffer(int capacity) : CircularBuffer() {
+    %%%%%:   41-block  0
+call    0 never executed
+    #####:   42:        capacity_ = capacity;
+    #####:   43:        buffer_ = new T[capacity];
+branch  0 never executed (fallthrough)
+branch  1 never executed
+    %%%%%:   43-block  0
+    %%%%%:   43-block  1
+call    2 never executed
+    %%%%%:   43-block  2
+call    3 never executed
+branch  4 never executed (fallthrough)
+branch  5 never executed (throw)
+    #####:   44:    }
+    %%%%%:   44-block  0
+    $$$$$:   44-block  1
+call    0 never executed
+        -:   45:
+        -:   46:    //Конструирует буфер заданной ёмкости, целиком заполняет его элементом elem.
+function _ZN14CircularBufferIiEC2EiRKi called 0 returned 0% blocks executed 0%
+    #####:   47:    CircularBuffer(int capacity, const T &elem) : CircularBuffer(capacity) {
+    %%%%%:   47-block  0
+call    0 never executed
+    #####:   48:        size_ = capacity_;
+    #####:   49:        end_ = capacity - 1;
+    #####:   50:        for (int i = 0; i < capacity; i++)
+    %%%%%:   50-block  0
+branch  0 never executed
+branch  1 never executed (fallthrough)
+    #####:   51:            buffer_[i] = elem;
+    %%%%%:   51-block  0
+    #####:   52:    }
+        -:   53:
+        -:   54:    //Доступ по индексу. Не проверяют правильность индекса.
+        -:   55:    T &operator[](int i) {
+        -:   56:        return buffer_[(begin_ + i) % capacity_];
+        -:   57:    }
+function _ZNK14CircularBufferIiEixEi called 0 returned 0% blocks executed 0%
+    #####:   58:    const T &operator[](int i) const {
+    #####:   59:        return buffer_[(begin_ + i) % capacity_];
+    %%%%%:   59-block  0
+        -:   60:    }
+        -:   61:
+        -:   62:    //Доступ по индексу. Методы бросают исключение в случае неверного индекса.
+        -:   63:    T &at(int i) {
+        -:   64:        if (i < 0 || i >= size_) {
+        -:   65:            throw std::out_of_range("Invalid index");
+        -:   66:        }
+        -:   67:        return buffer_[(begin_ + i) % capacity_];
+        -:   68:    }
+        -:   69:    const T &at(int i) const {
+        -:   70:        if (i < 0 || i >= size_) {
+        -:   71:            throw std::out_of_range("Invalid index");
+        -:   72:        }
+        -:   73:        return buffer_[(begin_ + i) % capacity_];
+        -:   74:    }
+        -:   75:
+        -:   76:    //Ссылка на первый элемент.
+        -:   77:    T &front() {
+        -:   78:        return buffer_[begin_];
+        -:   79:    }
+        -:   80:    //Ссылка на последний элемент.
+        -:   81:    T &back() {
+        -:   82:        return buffer_[end_];
+        -:   83:    }
+        -:   84:    const T &front() const {
+        -:   85:        return buffer_[begin_];
+        -:   86:    }
+        -:   87:    const T &back() const {
+        -:   88:        return buffer_[end_];
+        -:   89:    }
+        -:   90:
+        -:   91:    //Линеаризация - сдвинуть кольцевой буфер так, что его первый элемент
+        -:   92:    //переместится в начало аллоцированной памяти. Возвращает указатель
+        -:   93:    //на первый элемент.
+function _ZN14CircularBufferIiE9linearizeEv called 0 returned 0% blocks executed 0%
+    #####:   94:    T *linearize() {
+    #####:   95:        if (begin_ == 0 || size_ == 0)
+    %%%%%:   95-block  0
+branch  0 never executed (fallthrough)
+branch  1 never executed
+    %%%%%:   95-block  1
+branch  2 never executed (fallthrough)
+branch  3 never executed
+    #####:   96:            return buffer_;
+    %%%%%:   96-block  0
+        -:   97:
+    #####:   98:        T *temp = new T[size_];
+    %%%%%:   98-block  0
+branch  0 never executed (fallthrough)
+branch  1 never executed
+    %%%%%:   98-block  1
+    %%%%%:   98-block  2
+call    2 never executed
+    %%%%%:   98-block  3
+call    3 never executed
+    #####:   99:        if (begin_ <= end_)
+branch  0 never executed (fallthrough)
+branch  1 never executed
+    #####:  100:            memcpy(temp, buffer_ + begin_, size_ * sizeof(T));
+    %%%%%:  100-block  0
+        -:  101:        else {
+    #####:  102:            memcpy(temp, buffer_ + begin_, (capacity_ - begin_) * sizeof(T));
+    #####:  103:            memcpy(temp + (capacity_ - begin_), buffer_, (end_ + 1) * sizeof(T)); // <------Здесь
+    %%%%%:  103-block  0
+        -:  104:        }
+    #####:  105:        memcpy(buffer_, temp, size_ * sizeof(T));
+    #####:  106:        delete[](temp);
+    %%%%%:  106-block  0
+branch  0 never executed (fallthrough)
+branch  1 never executed
+    %%%%%:  106-block  1
+call    2 never executed
+    #####:  107:        begin_ = 0;
+    #####:  108:        end_ = size_ - 1;
+    #####:  109:        return buffer_;
+    %%%%%:  109-block  0
+        -:  110:    }
+        -:  111:    //Проверяет, является ли буфер линеаризованным.
+        -:  112:    [[nodiscard]] bool is_linearized() const {
+        -:  113:        return (begin_ == 0);
+        -:  114:    }
+        -:  115:    //Сдвигает буфер так, что по нулевому индексу окажется элемент
+        -:  116:    //с индексом new_begin.
+        -:  117:    void rotate(int new_begin) {
+        -:  118:        if (size_ == 0)
+        -:  119:            return;
+        -:  120:
+        -:  121:        if (size_ == capacity_) {
+        -:  122:            begin_ = (begin_ + new_begin) % capacity_;
+        -:  123:            end_ = (end_ + new_begin) % capacity_;
+        -:  124:            return;
+        -:  125:        }
+        -:  126:
+        -:  127:        for (int i = 0; i < new_begin; i++) {
+        -:  128:            buffer_[(end_ + 1 + i) % capacity_] = buffer_[(begin_ + i) % capacity_]; //Слишком просто чтобы быть правдой
+        -:  129:        }
+        -:  130:        begin_ = (begin_ + new_begin) % capacity_;
+        -:  131:        end_ = (end_ + new_begin) % capacity_;
+        -:  132:    }
+        -:  133:    //Количество элементов, хранящихся в буфере.
+function _ZNK14CircularBufferIiE4sizeEv called 0 returned 0% blocks executed 0%
+    #####:  134:    [[nodiscard]] int size() const {
+    #####:  135:        return size_;
+    %%%%%:  135-block  0
+        -:  136:    }
+        -:  137:    [[nodiscard]] bool empty() const {
+        -:  138:        return (size_ == 0);
+        -:  139:    }
+        -:  140:    //true, если size() == capacity().
+        -:  141:    [[nodiscard]] bool full() const {
+        -:  142:        return (size_ == capacity_);
+        -:  143:    }
+        -:  144:    //Количество свободных ячеек в буфере.
+        -:  145:    [[nodiscard]] int reserve() const {
+        -:  146:        return (capacity_ - size_);
+        -:  147:    }
+        -:  148:    //ёмкость буфера
+function _ZNK14CircularBufferIiE8capacityEv called 0 returned 0% blocks executed 0%
+    #####:  149:    [[nodiscard]] int capacity() const {
+    #####:  150:        return capacity_;
+    %%%%%:  150-block  0
+        -:  151:    }
+        -:  152:
+function _ZN14CircularBufferIiE12set_capacityEi called 4 returned 100% blocks executed 95%
+        4:  153:    void set_capacity(int new_capacity) {
+        4:  154:        if (new_capacity == 0) {
+        4:  154-block  0
+branch  0 taken 1 (fallthrough)
+branch  1 taken 3
+        1:  155:            delete[](buffer_);
+        1:  155-block  0
+branch  0 taken 1 (fallthrough)
+branch  1 taken 0
+        1:  155-block  1
+call    2 returned 1
+        1:  156:            begin_ = 0;
+        1:  157:            end_ = 0;
+        1:  158:            size_ = 0;
+        1:  159:            capacity_ = 0;
+        1:  160:            return;
+        1:  160-block  0
+        -:  161:        }
+        -:  162:
+        3:  163:        if (new_capacity == capacity_)
+        3:  163-block  0
+branch  0 taken 1 (fallthrough)
+branch  1 taken 2
+        1:  164:            return;
+        1:  164-block  0
+        -:  165:
+        2:  166:        linearize();
+        2:  166-block  0
+call    0 returned 2
+       2*:  167:        T *temp = new T[new_capacity];
+branch  0 taken 2 (fallthrough)
+branch  1 taken 0
+        2:  167-block  0
+    %%%%%:  167-block  1
+call    2 never executed
+        2:  167-block  2
+call    3 returned 2
+        2:  168:        if (size_ <= new_capacity) {
+branch  0 taken 1 (fallthrough)
+branch  1 taken 1
+        1:  169:            memcpy(temp, buffer_, size_ * sizeof(T));
+        1:  170:            delete[](buffer_);
+        1:  170-block  0
+branch  0 taken 1 (fallthrough)
+branch  1 taken 0
+        1:  170-block  1
+call    2 returned 1
+        1:  171:            buffer_ = temp;
+        1:  172:            capacity_ = new_capacity;
+        1:  172-block  0
+        -:  173:        } else {
+        1:  174:            memcpy(temp, buffer_, new_capacity * sizeof(T));
+        1:  175:            delete[](buffer_);
+        1:  175-block  0
+branch  0 taken 1 (fallthrough)
+branch  1 taken 0
+        1:  175-block  1
+call    2 returned 1
+        1:  176:            buffer_ = temp;
+        1:  177:            capacity_ = new_capacity;
+        1:  177-block  0
+        -:  178:        }
+        -:  179:    }
+        -:  180:
+        -:  181:    //Изменяет размер буфера.
+        -:  182:    //В случае расширения, новые элементы заполняются элементом item.
+function _ZN14CircularBufferIiE6resizeEiRKi called 4 returned 75% blocks executed 87%
+        4:  183:    void resize(int new_size, const T &item = T()) {
+        4:  184:        if (new_size > capacity_)
+        4:  184-block  0
+branch  0 taken 1 (fallthrough)
+branch  1 taken 3
+        1:  185:            throw std::length_error("Size can't be greater than capacity.");
+        1:  185-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:  185-block  1
+call    4 returned 0
+    $$$$$:  185-block  2
+call    5 never executed
+        -:  186:
+        3:  187:        if (new_size == size_)
+        3:  187-block  0
+branch  0 taken 1 (fallthrough)
+branch  1 taken 2
+        1:  188:            return;
+        1:  188-block  0
+        -:  189:
+        2:  190:        if (new_size < size_) {
+        2:  190-block  0
+branch  0 taken 1 (fallthrough)
+branch  1 taken 1
+        1:  191:            end_ = (begin_ + new_size - 1) % capacity_;
+        1:  192:            size_ = new_size;
+        1:  192-block  0
+        -:  193:        } else {
+       1*:  194:            for (int i = 0; i < size_ - new_size; i++)
+        1:  194-block  0
+        1:  194-block  1
+branch  0 taken 0
+branch  1 taken 1 (fallthrough)
+    #####:  195:                buffer_[(end_ + 1 + i) % capacity_] = item;
+    %%%%%:  195-block  0
+        1:  196:            end_ = (begin_ + new_size - 1) % capacity_;
+        1:  197:            size_ = new_size;
+        1:  197-block  0
+        -:  198:        }
+        -:  199:    }
+        -:  200:
+        -:  201:    //Оператор присваивания.
+function _ZN14CircularBufferIiEaSERKS0_ called 4 returned 100% blocks executed 92%
+        4:  202:    CircularBuffer &operator=(const CircularBuffer &cb) {
+        4:  203:        if (this == &cb)
+        4:  203-block  0
+branch  0 taken 1 (fallthrough)
+branch  1 taken 3
+        1:  204:            return *this;
+        1:  204-block  0
+        -:  205:
+        3:  206:        delete[](buffer_);
+        3:  206-block  0
+branch  0 taken 3 (fallthrough)
+branch  1 taken 0
+        3:  206-block  1
+call    2 returned 3
+       3*:  207:        buffer_ = new T[cb.capacity_];
+        3:  207-block  0
+branch  0 taken 3 (fallthrough)
+branch  1 taken 0
+        3:  207-block  1
+    %%%%%:  207-block  2
+call    2 never executed
+        3:  207-block  3
+call    3 returned 3
+        3:  208:        begin_ = cb.begin_;
+        3:  209:        end_ = cb.begin_;
+        3:  210:        size_ = cb.size_;
+        3:  211:        capacity_ = cb.capacity_;
+       22:  212:        for (int i = 0; i < size_; i++)
+       22:  212-block  0
+branch  0 taken 19
+branch  1 taken 3 (fallthrough)
+        -:  213:        {
+       19:  214:            buffer_[(begin_ + i) % capacity_] = cb.buffer_[(begin_ + i) % capacity_];
+       19:  214-block  0
+        -:  215:        }
+        3:  216:        return *this;
+        3:  216-block  0
+        -:  217:    }
+        -:  218:
+        -:  219:    //Обменивает содержимое буфера с буфером cb.
+function _ZN14CircularBufferIiE4swapERS0_ called 1 returned 100% blocks executed 75%
+        1:  220:    void swap(CircularBuffer &cb) {
+        1:  221:        CircularBuffer temp = *this;
+        1:  221-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  222:        *this = cb;
+        1:  222-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  223:        cb = temp;
+        1:  223-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  224:    }
+        1:  224-block  0
+call    0 returned 1
+    $$$$$:  224-block  1
+call    1 never executed
+        -:  225:
+        -:  226:    //Добавляет элемент в конец буфера.
+        -:  227:    //Если текущий размер буфера равен его ёмкости, то переписывается
+        -:  228:    //первый элемент буфера (т.е., буфер закольцован).
+function _ZN14CircularBufferIiE9push_backERKi called 0 returned 0% blocks executed 0%
+    #####:  229:    void push_back(const T &item = T()) {
+    #####:  230:        if (capacity_ == 0)
+    %%%%%:  230-block  0
+branch  0 never executed (fallthrough)
+branch  1 never executed
+    #####:  231:            throw std::overflow_error("Can't push to buffer with zero capacity");
+    %%%%%:  231-block  0
+call    0 never executed
+call    1 never executed
+branch  2 never executed (fallthrough)
+branch  3 never executed (throw)
+    %%%%%:  231-block  1
+call    4 never executed
+    $$$$$:  231-block  2
+call    5 never executed
+    #####:  232:        if (size_ == 0)
+    %%%%%:  232-block  0
+branch  0 never executed (fallthrough)
+branch  1 never executed
+        -:  233:        {
+    #####:  234:            buffer_[end_] = item;
+    #####:  235:            size_++;
+    #####:  236:            return;
+    %%%%%:  236-block  0
+        -:  237:        }
+    #####:  238:        if (size_ < capacity_) {
+    %%%%%:  238-block  0
+branch  0 never executed (fallthrough)
+branch  1 never executed
+    #####:  239:            end_ = (end_ + 1) % capacity_;
+    #####:  240:            buffer_[end_] = item;
+    #####:  241:            size_++;
+    %%%%%:  241-block  0
+        -:  242:        } else {
+    #####:  243:            begin_ = (begin_ + 1) % capacity_;
+    #####:  244:            end_ = (end_ + 1) % capacity_;
+    #####:  245:            buffer_[end_] = item;
+    %%%%%:  245-block  0
+        -:  246:        }
+        -:  247:    }
+        -:  248:
+        -:  249:    //Добавляет новый элемент перед первым элементом буфера.
+        -:  250:    //Аналогично push_back, может переписать последний элемент буфера.
+function _ZN14CircularBufferIiE10push_frontERKi called 0 returned 0% blocks executed 0%
+    #####:  251:    void push_front(const T &item = T()) {
+    #####:  252:        if (capacity_ == 0)
+    %%%%%:  252-block  0
+branch  0 never executed (fallthrough)
+branch  1 never executed
+    #####:  253:            throw std::overflow_error("Can't push to buffer with zero capacity");
+    %%%%%:  253-block  0
+call    0 never executed
+call    1 never executed
+branch  2 never executed (fallthrough)
+branch  3 never executed (throw)
+    %%%%%:  253-block  1
+call    4 never executed
+    $$$$$:  253-block  2
+call    5 never executed
+        -:  254:
+    #####:  255:        if (size_ < capacity_) {
+    %%%%%:  255-block  0
+branch  0 never executed (fallthrough)
+branch  1 never executed
+    #####:  256:            begin_ = ((begin_ == 0) ? capacity_ - 1 : begin_ - 1);
+    %%%%%:  256-block  0
+branch  0 never executed (fallthrough)
+branch  1 never executed
+    %%%%%:  256-block  1
+    %%%%%:  256-block  2
+    #####:  257:            buffer_[begin_] = item;
+    #####:  258:            size_++;
+    %%%%%:  258-block  0
+        -:  259:        } else {
+    #####:  260:            begin_ = ((begin_ == 0) ? capacity_ - 1 : begin_ - 1);
+    %%%%%:  260-block  0
+branch  0 never executed (fallthrough)
+branch  1 never executed
+    %%%%%:  260-block  1
+    %%%%%:  260-block  2
+    #####:  261:            end_ = ((end_ == 0) ? capacity_ - 1 : end_ - 1);
+    %%%%%:  261-block  0
+branch  0 never executed (fallthrough)
+branch  1 never executed
+    %%%%%:  261-block  1
+    %%%%%:  261-block  2
+    #####:  262:            buffer_[begin_] = item;
+    %%%%%:  262-block  0
+        -:  263:        }
+    #####:  264:    }
+    %%%%%:  264-block  0
+        -:  265:
+        -:  266:    //удаляет последний элемент буфера.
+        -:  267:    void pop_back() {
+        -:  268:        end_ = ((end_ == 0) ? capacity_ - 1 : end_ - 1);
+        -:  269:        size_--;
+        -:  270:    }
+        -:  271:
+        -:  272:    //удаляет первый элемент буфера.
+        -:  273:    void pop_front() {
+        -:  274:        begin_ = (begin_ + 1) % capacity_;
+        -:  275:        size_--;
+        -:  276:    }
+        -:  277:
+        -:  278:    //Вставляет элемент item по индексу pos. Ёмкость буфера остается неизменной.
+function _ZN14CircularBufferIiE6insertEiRKi called 4 returned 25% blocks executed 77%
+        4:  279:    void insert(int pos, const T &item = T()) {
+        4:  280:        if (capacity_ == 0)
+        4:  280-block  0
+branch  0 taken 1 (fallthrough)
+branch  1 taken 3
+        1:  281:            throw std::overflow_error("Can't push to buffer with zero capacity");
+        1:  281-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:  281-block  1
+call    4 returned 0
+    $$$$$:  281-block  2
+call    5 never executed
+        3:  282:        if (size_ == capacity_)
+        3:  282-block  0
+branch  0 taken 1 (fallthrough)
+branch  1 taken 2
+        1:  283:            throw std::overflow_error("Can't insert to full buffer");
+        1:  283-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:  283-block  1
+call    4 returned 0
+    $$$$$:  283-block  2
+call    5 never executed
+        2:  284:        if (pos > size_)
+        2:  284-block  0
+branch  0 taken 1 (fallthrough)
+branch  1 taken 1
+        1:  285:            throw std::invalid_argument("Wrong Insert position");
+        1:  285-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:  285-block  1
+call    4 returned 0
+    $$$$$:  285-block  2
+call    5 never executed
+        -:  286:
+        3:  287:        for (int i = 0; i < size_ - pos; i++)
+        1:  287-block  0
+        3:  287-block  1
+branch  0 taken 2
+branch  1 taken 1 (fallthrough)
+        2:  288:            buffer_[(capacity_ + end_ - i + 1) % capacity_] = buffer_[(capacity_ + end_ - i) % capacity_];
+        2:  288-block  0
+        1:  289:        buffer_[pos] = item;
+        1:  290:        size_++;
+        1:  291:        end_ = (end_ + 1) % capacity_;
+        1:  292:    }
+        1:  292-block  0
+        -:  293:
+        -:  294:    //Удаляет элементы из буфера в интервале [first, last).
+function _ZN14CircularBufferIiE5eraseEii called 1 returned 100% blocks executed 100%
+        1:  295:    void erase(int first, int last) {
+        1:  296:        int shift = last - first;
+        4:  297:        for (int i = 0; i < shift; i++)
+        1:  297-block  0
+        4:  297-block  1
+branch  0 taken 3
+branch  1 taken 1 (fallthrough)
+        3:  298:            buffer_[(first + i) % capacity_] = buffer_[(first + shift + i) % capacity_];
+        3:  298-block  0
+        1:  299:        size_ -= shift;
+        1:  300:        end_ = (capacity_ + end_ - shift) % capacity_;
+        1:  301:    }
+        -:  302:
+        -:  303:    //Очищает буфер.
+function _ZN14CircularBufferIiE5clearEv called 2 returned 100% blocks executed 100%
+        2:  304:    void clear() {
+        2:  305:        if (capacity_ == 0)
+        2:  305-block  0
+branch  0 taken 1 (fallthrough)
+branch  1 taken 1
+        1:  306:            return;
+        1:  306-block  0
+        1:  307:        delete[](buffer_);
+        1:  307-block  0
+branch  0 taken 1 (fallthrough)
+branch  1 taken 0
+        1:  307-block  1
+call    2 returned 1
+        1:  308:        begin_ = 0;
+        1:  309:        end_ = 0;
+        1:  310:        size_ = 0;
+        1:  311:        capacity_ = 0;
+        1:  311-block  0
+        -:  312:    }
+        -:  313:
+        -:  314:    friend bool operator==(const CircularBuffer& a, const CircularBuffer& b) {
+        -:  315:        if (&a == &b)
+        -:  316:            return true;
+        -:  317:        if (a.size_ != b.size_)
+        -:  318:            return false;
+        -:  319:        if (a.capacity_ != b.capacity_)
+        -:  320:            return false;
+        -:  321:
+        -:  322:        for (int i = 0; i < a.size_; i++) {
+        -:  323:            if (a.buffer_[(a.begin_ + i) % a.capacity_] != b.buffer_[(b.begin_ + i) % b.capacity_])
+        -:  324:                return false;
+        -:  325:        }
+        -:  326:
+        -:  327:        return true;
+        -:  328:    }
+        -:  329:
+        -:  330:    friend bool operator!=(const CircularBuffer &a, const CircularBuffer &b) {
+        -:  331:        if (&a == &b)
+        -:  332:            return false;
+        -:  333:        if (a.size_ != b.size_)
+        -:  334:            return true;
+        -:  335:        if (a.capacity_ != b.capacity_)
+        -:  336:            return true;
+        -:  337:        for (int i = 0; i < a.size_; i++)
+        -:  338:            if (a.buffer_[(a.begin_ + i) % a.capacity_] != b.buffer_[(b.begin_ + i) % b.capacity_])
+        -:  339:                return true;
+        -:  340:
+        -:  341:        return false;
+        -:  342:    }
+        -:  343:};
