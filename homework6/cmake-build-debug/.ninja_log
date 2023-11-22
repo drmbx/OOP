@@ -1,0 +1,9 @@
+# ninja log v5
+1	751	1700661623226522880	CMakeFiles/homework6.dir/SmsNotifier.cpp.o	c5cd35c527b3afe3
+1	752	1700661623226522880	CMakeFiles/homework6.dir/EmailNotifier.cpp.o	2920f37bfca737b2
+0	607	1700661666714081066	CMakeFiles/homework6.dir/SmsNotifier.cpp.o	c5cd35c527b3afe3
+1	642	1700661666750080699	CMakeFiles/homework6.dir/EmailNotifier.cpp.o	2920f37bfca737b2
+0	700	1700661666806080125	CMakeFiles/homework6.dir/main.cpp.o	b6f4c41d55494440
+700	778	1700661666886079306	homework6	901b703aefc47150
+0	466	1700661702653711080	CMakeFiles/homework6.dir/main.cpp.o	b6f4c41d55494440
+466	540	1700661702725710334	homework6	901b703aefc47150

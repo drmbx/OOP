@@ -1,0 +1,6 @@
+# ninja log v5
+1	45	1700653151247716319	build.ninja	6e3e5db8c56cf40b
+0	529	1700638291813219295	CMakeFiles/homework5.dir/main.cpp.o	d1e25e48110389f5
+1	21	0	CMakeFiles/homework5.dir/module2.cppm.o	4655b0399e597083
+1	17	0	CMakeFiles/homework5.dir/module1.cppm.o	b5dad01db46fbc49
+3	18	0	CMakeFiles/homework5.dir/module3.cppm.o	a93f3e36a55c3996
