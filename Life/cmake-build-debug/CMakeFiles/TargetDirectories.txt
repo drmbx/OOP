@@ -1,0 +1,3 @@
+/home/drmbx/CLionProjects/OOP/Life/cmake-build-debug/CMakeFiles/Life.dir
+/home/drmbx/CLionProjects/OOP/Life/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/drmbx/CLionProjects/OOP/Life/cmake-build-debug/CMakeFiles/rebuild_cache.dir
