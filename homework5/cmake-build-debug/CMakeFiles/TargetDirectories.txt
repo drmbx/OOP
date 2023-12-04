@@ -1,3 +1,3 @@
-/home/drmbx/CLionProjects/OOP/homework5/cmake-build-debug/CMakeFiles/homework5.dir
-/home/drmbx/CLionProjects/OOP/homework5/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/drmbx/CLionProjects/OOP/homework5/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/code/Study_projects/OOP/homework5/cmake-build-debug/CMakeFiles/homework5.dir
+C:/code/Study_projects/OOP/homework5/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/code/Study_projects/OOP/homework5/cmake-build-debug/CMakeFiles/rebuild_cache.dir

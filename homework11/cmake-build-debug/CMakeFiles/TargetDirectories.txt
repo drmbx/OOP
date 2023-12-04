@@ -1,0 +1,3 @@
+C:/code/Study_projects/OOP/homework11/cmake-build-debug/CMakeFiles/homework11.dir
+C:/code/Study_projects/OOP/homework11/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/code/Study_projects/OOP/homework11/cmake-build-debug/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,18 @@
+# ninja log v5
+1	1438	7232294317035962	CMakeFiles/homework10.dir/main.cpp.obj	756f1d2a1113cc70
+7	1815	7232294320803812	CMakeFiles/homework10.dir/Document.cpp.obj	4b5b4595154f475
+12	1834	7232294321023690	CMakeFiles/homework10.dir/test.cpp.obj	afc04d2483b698f
+5	1487	7232297556757339	CMakeFiles/homework10.dir/main.cpp.obj	756f1d2a1113cc70
+11	1756	7232297559434969	CMakeFiles/homework10.dir/test.cpp.obj	afc04d2483b698f
+4	1577	7232297720466163	CMakeFiles/homework10.dir/Document.cpp.obj	4b5b4595154f475
+3	1455	7232300010338863	CMakeFiles/homework10.dir/main.cpp.obj	756f1d2a1113cc70
+14	1884	7232300014656399	CMakeFiles/homework10.dir/Document.cpp.obj	4b5b4595154f475
+9	1895	7232300014766342	CMakeFiles/homework10.dir/test.cpp.obj	afc04d2483b698f
+3	1432	7232302903905311	CMakeFiles/homework10.dir/main.cpp.obj	756f1d2a1113cc70
+8	1940	7232302908932441	CMakeFiles/homework10.dir/Document.cpp.obj	4b5b4595154f475
+14	2018	7232302909751971	CMakeFiles/homework10.dir/test.cpp.obj	afc04d2483b698f
+2018	2281	7232302912330915	homework10.exe	6edc197d70386b91
+3	945	7232303050986894	CMakeFiles/homework10.dir/main.cpp.obj	756f1d2a1113cc70
+946	1168	7232303053165647	homework10.exe	6edc197d70386b91
+4	853	7232303106165335	CMakeFiles/homework10.dir/main.cpp.obj	756f1d2a1113cc70
+854	1072	7232303108262048	homework10.exe	6edc197d70386b91
