@@ -1,0 +1,27 @@
+cmake_minimum_required(VERSION 3.26)
+project(Dilemma1)
+
+set(CMAKE_CXX_STANDARD 23)
+
+add_executable(Dilemma1 main.cpp
+        AlwaysBetrayStrategy.cpp
+        AlwaysBetrayStrategy.h
+        IStrategy.h
+        Choice.h
+        AlwaysCooperateStrategy.cpp
+        AlwaysCooperateStrategy.h
+        RandomStrategy.cpp
+        RandomStrategy.h
+        StrategyFactory.cpp
+        StrategyFactory.h
+        StrategyEnum.h
+        ICompetition.h
+        DetailedCompetition.cpp
+        DetailedCompetition.h
+        FastCompetition.cpp
+        FastCompetition.h
+        TournamentCompetition.cpp
+        TournamentCompetition.h
+        Defaults.h
+        Defaults.cpp
+        CompetitionEnum.h)
