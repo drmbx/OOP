@@ -1,4 +1,5 @@
 #include <iostream>
+<<<<<<< HEAD
 #include <unordered_map>
 #include "StrategyFactory.h"
 #include "CompetitionEnum.h"
@@ -55,5 +56,12 @@ int main(const int argc, const char *argv[]) {
             break;
     }
     competition->Simulation();
+=======
+#include "StrategyFactory.h"
+
+
+
+int main() {
+>>>>>>> d06e24c4321ce550dd3c016247dcbcd40e6427e5
     return 0;
 }

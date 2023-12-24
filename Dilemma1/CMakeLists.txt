@@ -23,6 +23,7 @@ add_executable(Dilemma1 main.cpp
         TournamentCompetition.cpp
         TournamentCompetition.h
         Defaults.h
+<<<<<<< HEAD
         CompetitionEnum.h
         EnviousStrategy.cpp
         EnviousStrategy.h
@@ -36,3 +37,7 @@ add_executable(Dilemma1 main.cpp
         UltimateRandomStrategy.h
         Parsers.cpp
         Parsers.h)
+=======
+        Defaults.cpp
+        CompetitionEnum.h)
+>>>>>>> d06e24c4321ce550dd3c016247dcbcd40e6427e5

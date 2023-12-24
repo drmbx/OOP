@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #pragma once
 
 #include <string>
@@ -19,3 +20,26 @@ public:
 };
 
 
+=======
+#pragma once
+
+#include <string>
+#include <array>
+#include <vector>
+#include "Choice.h"
+
+using MoveTable = std::vector<std::array<Choice, 3>>;
+using ReferenceTable = std::array<std::array<std::array<std::array<int, 3>, 2>, 2>, 2>;
+using ScoreTable = std::vector<std::array<int, 3>>;
+
+class IStrategy {
+public:
+    virtual ~IStrategy() = default;
+
+    virtual Choice GetMove(const MoveTable &table, int step) = 0;
+
+    virtual const std::string &GetName() = 0;
+};
+
+
+>>>>>>> d06e24c4321ce550dd3c016247dcbcd40e6427e5

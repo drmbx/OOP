@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #include "StrategyFactory.h"
 #include "StrategyEnum.h"
 #include "EnviousStrategy.h"
@@ -25,4 +26,18 @@ std::unique_ptr<IStrategy> StrategyFactory::factory(StrategyEnum strategy) {
         case UltimateRandomEnum:
             return std::make_unique<UltimateRandomStrategy>();
     }
+=======
+#include "StrategyFactory.h"
+#include "StrategyEnum.h"
+
+std::unique_ptr<IStrategy> StrategyFactory::factory(StrategyEnum strategy) {
+    switch (strategy) {
+        case AlwaysBetrayEnum:
+            return std::make_unique<AlwaysBetrayStrategy>();
+        case AlwaysCooperateEnum:
+            return std::make_unique<AlwaysCooperateStrategy>();
+        case RandomEnum:
+            return std::make_unique<RandomStrategy>();
+    }
+>>>>>>> d06e24c4321ce550dd3c016247dcbcd40e6427e5
 }
