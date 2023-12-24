@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="Dilemma1"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="C:/code/Study_projects/OOP/Dilemma1/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/code/Study_projects/OOP/Dilemma1/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/code/Study_projects/OOP/Dilemma1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/code/Study_projects/OOP/Dilemma1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/code/Study_projects/OOP/Dilemma1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Dilemma1">
+				<Option output="C:/code/Study_projects/OOP/Dilemma1/cmake-build-debug/Dilemma1.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/code/Study_projects/OOP/Dilemma1/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Program Files/JetBrains/CLion 2023.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2023.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2023.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2023.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2023.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2023.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2023.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/code/Study_projects/OOP/Dilemma1/cmake-build-debug/Makefile&quot;  VERBOSE=1 Dilemma1"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/code/Study_projects/OOP/Dilemma1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/code/Study_projects/OOP/Dilemma1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/code/Study_projects/OOP/Dilemma1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Dilemma1/fast">
+				<Option output="C:/code/Study_projects/OOP/Dilemma1/cmake-build-debug/Dilemma1.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/code/Study_projects/OOP/Dilemma1/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Program Files/JetBrains/CLion 2023.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2023.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2023.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2023.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2023.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2023.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2023.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/code/Study_projects/OOP/Dilemma1/cmake-build-debug/Makefile&quot;  VERBOSE=1 Dilemma1/fast"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/code/Study_projects/OOP/Dilemma1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/code/Study_projects/OOP/Dilemma1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/code/Study_projects/OOP/Dilemma1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="C:/code/Study_projects/OOP/Dilemma1/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/code/Study_projects/OOP/Dilemma1/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/code/Study_projects/OOP/Dilemma1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/code/Study_projects/OOP/Dilemma1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/code/Study_projects/OOP/Dilemma1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="C:/code/Study_projects/OOP/Dilemma1/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/code/Study_projects/OOP/Dilemma1/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/code/Study_projects/OOP/Dilemma1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/code/Study_projects/OOP/Dilemma1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/code/Study_projects/OOP/Dilemma1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="C:/code/Study_projects/OOP/Dilemma1/AlwaysBetrayStrategy.cpp">
+			<Option target="Dilemma1"/>
+		</Unit>
+		<Unit filename="C:/code/Study_projects/OOP/Dilemma1/AlwaysBetrayStrategy.h">
+			<Option target="Dilemma1"/>
+		</Unit>
+		<Unit filename="C:/code/Study_projects/OOP/Dilemma1/AlwaysCooperateStrategy.cpp">
+			<Option target="Dilemma1"/>
+		</Unit>
+		<Unit filename="C:/code/Study_projects/OOP/Dilemma1/AlwaysCooperateStrategy.h">
+			<Option target="Dilemma1"/>
+		</Unit>
+		<Unit filename="C:/code/Study_projects/OOP/Dilemma1/Choice.h">
+			<Option target="Dilemma1"/>
+		</Unit>
+		<Unit filename="C:/code/Study_projects/OOP/Dilemma1/CompetitionEnum.h">
+			<Option target="Dilemma1"/>
+		</Unit>
+		<Unit filename="C:/code/Study_projects/OOP/Dilemma1/Defaults.h">
+			<Option target="Dilemma1"/>
+		</Unit>
+		<Unit filename="C:/code/Study_projects/OOP/Dilemma1/DetailedCompetition.cpp">
+			<Option target="Dilemma1"/>
+		</Unit>
+		<Unit filename="C:/code/Study_projects/OOP/Dilemma1/DetailedCompetition.h">
+			<Option target="Dilemma1"/>
+		</Unit>
+		<Unit filename="C:/code/Study_projects/OOP/Dilemma1/EnviousMercifulStrategy.cpp">
+			<Option target="Dilemma1"/>
+		</Unit>
+		<Unit filename="C:/code/Study_projects/OOP/Dilemma1/EnviousMercifulStrategy.h">
+			<Option target="Dilemma1"/>
+		</Unit>
+		<Unit filename="C:/code/Study_projects/OOP/Dilemma1/EnviousStrategy.cpp">
+			<Option target="Dilemma1"/>
+		</Unit>
+		<Unit filename="C:/code/Study_projects/OOP/Dilemma1/EnviousStrategy.h">
+			<Option target="Dilemma1"/>
+		</Unit>
+		<Unit filename="C:/code/Study_projects/OOP/Dilemma1/FastCompetition.cpp">
+			<Option target="Dilemma1"/>
+		</Unit>
+		<Unit filename="C:/code/Study_projects/OOP/Dilemma1/FastCompetition.h">
+			<Option target="Dilemma1"/>
+		</Unit>
+		<Unit filename="C:/code/Study_projects/OOP/Dilemma1/ICompetition.h">
+			<Option target="Dilemma1"/>
+		</Unit>
+		<Unit filename="C:/code/Study_projects/OOP/Dilemma1/IStrategy.h">
+			<Option target="Dilemma1"/>
+		</Unit>
+		<Unit filename="C:/code/Study_projects/OOP/Dilemma1/Parsers.cpp">
+			<Option target="Dilemma1"/>
+		</Unit>
+		<Unit filename="C:/code/Study_projects/OOP/Dilemma1/Parsers.h">
+			<Option target="Dilemma1"/>
+		</Unit>
+		<Unit filename="C:/code/Study_projects/OOP/Dilemma1/RandomStrategy.cpp">
+			<Option target="Dilemma1"/>
+		</Unit>
+		<Unit filename="C:/code/Study_projects/OOP/Dilemma1/RandomStrategy.h">
+			<Option target="Dilemma1"/>
+		</Unit>
+		<Unit filename="C:/code/Study_projects/OOP/Dilemma1/RevengefulMercifulStrategy.cpp">
+			<Option target="Dilemma1"/>
+		</Unit>
+		<Unit filename="C:/code/Study_projects/OOP/Dilemma1/RevengefulMercifulStrategy.h">
+			<Option target="Dilemma1"/>
+		</Unit>
+		<Unit filename="C:/code/Study_projects/OOP/Dilemma1/RevengefulStrategy.cpp">
+			<Option target="Dilemma1"/>
+		</Unit>
+		<Unit filename="C:/code/Study_projects/OOP/Dilemma1/RevengefulStrategy.h">
+			<Option target="Dilemma1"/>
+		</Unit>
+		<Unit filename="C:/code/Study_projects/OOP/Dilemma1/StrategyEnum.h">
+			<Option target="Dilemma1"/>
+		</Unit>
+		<Unit filename="C:/code/Study_projects/OOP/Dilemma1/StrategyFactory.cpp">
+			<Option target="Dilemma1"/>
+		</Unit>
+		<Unit filename="C:/code/Study_projects/OOP/Dilemma1/StrategyFactory.h">
+			<Option target="Dilemma1"/>
+		</Unit>
+		<Unit filename="C:/code/Study_projects/OOP/Dilemma1/TournamentCompetition.cpp">
+			<Option target="Dilemma1"/>
+		</Unit>
+		<Unit filename="C:/code/Study_projects/OOP/Dilemma1/TournamentCompetition.h">
+			<Option target="Dilemma1"/>
+		</Unit>
+		<Unit filename="C:/code/Study_projects/OOP/Dilemma1/UltimateRandomStrategy.cpp">
+			<Option target="Dilemma1"/>
+		</Unit>
+		<Unit filename="C:/code/Study_projects/OOP/Dilemma1/UltimateRandomStrategy.h">
+			<Option target="Dilemma1"/>
+		</Unit>
+		<Unit filename="C:/code/Study_projects/OOP/Dilemma1/main.cpp">
+			<Option target="Dilemma1"/>
+		</Unit>
+		<Unit filename="C:/code/Study_projects/OOP/Dilemma1/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
