@@ -3,7 +3,4 @@ project(Life)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(Life main.cpp
-        Rules.cpp
-        Rules.h
-)
+add_executable(Life main.cpp)

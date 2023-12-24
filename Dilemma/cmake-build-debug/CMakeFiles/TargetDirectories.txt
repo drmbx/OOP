@@ -1,0 +1,3 @@
+C:/code/Study_projects/OOP/Dilemma/cmake-build-debug/CMakeFiles/Dilemma.dir
+C:/code/Study_projects/OOP/Dilemma/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/code/Study_projects/OOP/Dilemma/cmake-build-debug/CMakeFiles/rebuild_cache.dir
