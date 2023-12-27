@@ -1,0 +1,3 @@
+C:/code/Study_projects/OOP/SoundProcessor1/cmake-build-debug/CMakeFiles/SoundProcessor1.dir
+C:/code/Study_projects/OOP/SoundProcessor1/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/code/Study_projects/OOP/SoundProcessor1/cmake-build-debug/CMakeFiles/rebuild_cache.dir

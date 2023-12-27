@@ -1,0 +1,23 @@
+# ninja log v5
+10	1376	7253981711239195	CMakeFiles/SoundProcessor1.dir/WavEncoder.cpp.obj	5d73d8832c5d9d17
+13	1152	7253979269308972	CMakeFiles/SoundProcessor1.dir/IAudioPoolFacade.cpp.obj	cbbbdd0472a5a245
+4	1269	7254016048483136	CMakeFiles/SoundProcessor1.dir/ICommand.cpp.obj	1e3a30814dda8bdc
+25	2034	7253978780003641	CMakeFiles/SoundProcessor1.dir/Audio.cpp.obj	b886cc99149e42a3
+8	1437	7254016050162165	CMakeFiles/SoundProcessor1.dir/main.cpp.obj	47039ada41e76aa0
+6	2120	7254016511006812	CMakeFiles/SoundProcessor1.dir/MuteCommand.cpp.obj	ffe3f68e0d62db3c
+1438	6065	7254016096300616	CMakeFiles/SoundProcessor1.dir/ICommandFactory.cpp.obj	91d70bb454ee9a4f
+12	2346	7254016059227151	CMakeFiles/SoundProcessor1.dir/Application.cpp.obj	5c2480d73f77c630
+11	2056	7254016509983940	CMakeFiles/SoundProcessor1.dir/MuteCommandFactory.cpp.obj	b3512147cf441269
+2077	3093	7254016520761221	CMakeFiles/SoundProcessor1.dir/MixCommandFactory.cpp.obj	54d0453cedf8828f
+16	2077	7254016510557074	CMakeFiles/SoundProcessor1.dir/MixCommand.cpp.obj	fb1548aef14ae6af
+4	1027	7254016656655833	CMakeFiles/SoundProcessor1.dir/InsertCommand.cpp.obj	12f878517437c5bc
+2573	3856	7254016074353178	CMakeFiles/SoundProcessor1.dir/InsertCommandFactory.cpp.obj	dd887981d1ab3697
+1028	3581	7254016682124039	SoundProcessor1.exe	b1bd1486b070a91
+1	307	7254072003596310	build.ninja	b6abb4479d5168f0
+4	1682	7254120615215821	CMakeFiles/SoundProcessor1.dir/WavEncoder.cpp.obj	5d73d8832c5d9d17
+9	1725	7254120615585603	CMakeFiles/SoundProcessor1.dir/main.cpp.obj	47039ada41e76aa0
+15	2258	7254120620952547	CMakeFiles/SoundProcessor1.dir/Application.cpp.obj	5c2480d73f77c630
+1683	3345	7254120631861008	CMakeFiles/SoundProcessor1.dir/MixCommand.cpp.obj	fb1548aef14ae6af
+1725	3350	7254120631910981	CMakeFiles/SoundProcessor1.dir/InsertCommand.cpp.obj	12f878517437c5bc
+2259	3711	7254120635504119	CMakeFiles/SoundProcessor1.dir/MuteCommand.cpp.obj	ffe3f68e0d62db3c
+3711	4252	7254120640837534	SoundProcessor1.exe	c423e5fff7f5e3aa
